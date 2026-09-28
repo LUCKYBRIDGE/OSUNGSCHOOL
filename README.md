@@ -1,10 +1,22 @@
 # OSUNGSCHOOL
 
-강릉오성학교 교사를 위한 **AI 활용·바이브코딩 연수** 자료 제작 저장소이다.
+강릉오성학교 교사를 위한 **2026 찾아가는 학교 컨설팅 - 4. AI·디지털 문제해결 실무 과정** 자료 제작 저장소이다.
 
+- 일시: **2026. 9. 30.**
+- 장소: **강릉오성학교**
 - 주강사: **서정완**
-- 대상: 전문 개발자가 아닌 강릉오성학교 교사
-- 방향: 생활·수업의 작은 불편을 AI와 함께 실제 도구로 만들어 보는 초보자 중심 바이브코딩 연수
+- 대상: 전문 개발자가 아닌 학교 교사
+- 방향: 생활·수업·업무의 문제를 AI와 디지털 도구로 실제 해결해 보는 실무형 연수
+
+## 현재 발표 자료 운영 방식
+
+자료가 길어졌기 때문에 실제 발표용은 **1부·2부 분할본**으로 운영한다.
+
+| 구분 | 파일 성격 | 핵심 내용 |
+|---|---|---|
+| 1부 | 문제 정의와 AI 작업환경 | 문제 찾기, 사용 조건, 최소 개발 지식, 하네스, ECC, 작업공간, Handoff |
+| 2부 | UX/UI 설계와 구현·검증 실습 | UX/UI, DESIGN.md, 디자인 도구, 구현, 검증, 배포, 오성학교 실습 |
+| MASTER | 전체 흐름 보존용 | 1부와 2부를 합친 전체 편집 기준 |
 
 ## 저장소 구성
 
@@ -15,38 +27,32 @@ OSUNGSCHOOL/
 ├─ DESIGN.md
 ├─ docs/
 │  ├─ 00_course_overview.md
-│  ├─ 02_slide_outline.md
-│  ├─ 03_speaker_script.md
-│  ├─ 04_sources.md
+│  ├─ lecture_flow_split_20260930.md
+│  ├─ pdf_validation_split_20260930.md
+│  ├─ repository_structure_split_20260930.md
 │  └─ revision notes
-├─ slides/
-│  ├─ source/
-│  └─ pdf/
-└─ references/
-   └─ source/
+└─ slides/
+   ├─ source/
+   │  ├─ osung_ai_digital_problem_solving_master_v17_20260930.pptx
+   │  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pptx
+   │  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pptx
+   └─ pdf/
+      ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pdf
+      └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pdf
 ```
 
 ## 강의 구성 원칙
 
-- 추상적인 개발 용어보다 **생활 속 예시를 먼저** 보여준다.
-- 예약 종료 같은 작은 기능에서 시작해 사용자·환경·기술 선택을 설명한다.
-- Harness, Skill, MCP 등은 학교 업무에 빗댄 쉬운 설명과 실제 작업 흐름을 함께 제시한다.
-- Everything Claude Code(ECC)는 Anthropic 해커톤 우승자의 공개 하네스 사례로 분석하되, 전부 복사하지 않고 초보자에게 필요한 구조만 가져온다.
-- 해커톤 우승 사례에서는 직업보다 **현장 문제와 도메인 지식을 어떻게 구조화했는지**를 본다.
-- DESIGN.md → 이미지 도안 → Claude Design / Stitch / Figma → 개발 Agent 연결 흐름을 다룬다.
+- 용어는 외우되, 이름만 외우지 않고 **기능·사용 장면·AI에게 요청하는 방법**까지 함께 익힌다.
+- 작은 불편에서 출발해 사용 조건과 최소 개발 지식을 먼저 설명한다.
+- Harness, Loop, Graph, Skill, MCP, Handoff는 기능을 정확히 이해할 수 있는 설명과 비유를 함께 사용한다.
+- Everything Claude Code(ECC)는 Anthropic 해커톤 우승자의 공개 하네스 사례로 분석하되, 학교 현장에 필요한 구조만 가져온다.
+- DESIGN.md는 화면 기준을 정리하는 문서이며, 이미지 도안은 필수가 아니라 필요할 때 쓰는 선택지로 설명한다.
 - 특수교육 교사의 도메인 지식을 사용자 흐름과 UX 설계로 연결한다.
 - PDF는 16:9로 제작하고 전 페이지 렌더링 검수한다.
 
-## 현재 개편 방향
+## 최신 정리 문서
 
-초기 자료보다 초보 교사 중심으로 다음 내용을 강화했다.
-
-1. 컴퓨터 예약 종료 예시
-2. 초보자가 알아둘 최소 개발 지식
-3. CPU/RAM보다 사용 조건을 먼저 보는 기술 선택
-4. ECC에서 초보자가 가져올 핵심 20%
-5. Claude Code 해커톤 우승자들의 다양한 전문 배경과 도메인 지식 사례
-6. ChatGPT Plugin/App, Claude Connector, MCP의 관계
-7. Figma ↔ Claude Code/Codex 연결
-8. Stitch → Google Antigravity 인계
-9. DESIGN.md를 여러 도구가 공유하는 디자인 기준으로 활용
+- `docs/lecture_flow_split_20260930.md`: 1부·2부 강의 흐름 및 슬라이드 목록
+- `docs/pdf_validation_split_20260930.md`: 분할본 PDF 검수 기록
+- `docs/repository_structure_split_20260930.md`: 저장소 정리 기준
