@@ -16,11 +16,11 @@
 slides/
 ├─ source/
 │  ├─ osung_ai_digital_problem_solving_master_v17_20260930.pptx
-│  ├─ osung_ai_digital_problem_solving_part1_workspace_v19_final2_20260930.pptx
-│  └─ osung_ai_digital_problem_solving_part2_ux_implementation_v19_final2_20260930.pptx
+│  ├─ osung_ai_digital_problem_solving_part1_workspace_v20_polished_20260930.pptx
+│  └─ osung_ai_digital_problem_solving_part2_ux_implementation_v20_polished_20260930.pptx
 └─ pdf/
-   ├─ osung_ai_digital_problem_solving_part1_workspace_v19_final2_20260930.pdf
-   └─ osung_ai_digital_problem_solving_part2_ux_implementation_v19_final2_20260930.pdf
+   ├─ osung_ai_digital_problem_solving_part1_workspace_v20_polished_20260930.pdf
+   └─ osung_ai_digital_problem_solving_part2_ux_implementation_v20_polished_20260930.pdf
 ```
 
 ## 파일 역할
@@ -29,11 +29,14 @@ slides/
 - `part1`: 표제는 `4. AI·디지털 문제해결 실무 과정`, 부제는 `1부. 문제 정의와 AI 작업환경`
 - `part2`: 표제는 `4. AI·디지털 문제해결 실무 과정`, 부제는 `2부. UX/UI 설계와 구현·검증 실습`
 
-## v19 정리 내용
+## v20 정리 내용
 
-- 도형과 화살표가 맞지 않던 도식을 카드형 흐름으로 재배치했다.
-- 2부에 잘못 들어간 개발 기초 중복 슬라이드를 제거하고, `Figma`, `Figma MCP`, `Stitch → Antigravity` 설명을 복원했다.
-- 1부·2부 표지에서 본 표제와 부제를 구분했다.
+- 1부의 강사용 메타 슬라이드와 중복 전환 슬라이드를 제거했다.
+- 2부에 잘못 섞여 있던 1부 슬라이드 6장을 제거했다.
+- 2부의 원형 Loop 도식을 카드형 단계 도식으로 교체했다.
+- `실습 흐름`에서 이미지 도안을 필수 단계가 아니라 `필요 시 선택`으로 수정했다.
+- ECC 설명에 2026년 초 해커톤 사례 시점을 보완하고, 공식 표준이 아니라 공개 사례임을 명시했다.
+- 도구별 지침 파일, Skills, Commands, Handoff, `C:\ai_dev` 설명을 최신 분석 기준으로 완화·정리했다.
 - PDF 렌더링 후 contact sheet와 spotcheck 이미지로 검수했다.
 
 ## 관리 원칙
