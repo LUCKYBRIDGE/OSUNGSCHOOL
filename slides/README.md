@@ -2,24 +2,32 @@
 
 강의용 편집 원본과 최종 발표 PDF를 분리해 관리한다.
 
+## 표제 규칙
+
+1부와 2부 파일의 표제는 모두 동일하게 유지한다.
+
+> **4. AI·디지털 문제해결 실무 과정**
+
+1부와 2부의 구분명은 표제가 아니라 부제로 넣는다.
+
 ## 현재 발표용 파일
 
 ```text
 slides/
 ├─ source/
 │  ├─ osung_ai_digital_problem_solving_master_v17_20260930.pptx
-│  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pptx
-│  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pptx
+│  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pptx
+│  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pptx
 └─ pdf/
-   ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pdf
-   └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pdf
+   ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pdf
+   └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pdf
 ```
 
 ## 파일 역할
 
 - `master`: 전체 흐름 보존 및 통합 편집 기준
-- `part1`: 문제 정의, 최소 개발 지식, 하네스, 작업공간, Handoff
-- `part2`: UX/UI, DESIGN.md, 디자인 도구, 구현·검증·배포, 실습
+- `part1`: 표제는 `4. AI·디지털 문제해결 실무 과정`, 부제는 `1부. 문제 정의와 AI 작업환경`
+- `part2`: 표제는 `4. AI·디지털 문제해결 실무 과정`, 부제는 `2부. UX/UI 설계와 구현·검증 실습`
 
 ## 관리 원칙
 
