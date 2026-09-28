@@ -8,15 +8,19 @@
 - 대상: 전문 개발자가 아닌 학교 교사
 - 방향: 생활·수업·업무의 문제를 AI와 디지털 도구로 실제 해결해 보는 실무형 연수
 
-## 현재 발표 자료 운영 방식
+## 표제와 부제 운영 원칙
 
-자료가 길어졌기 때문에 실제 발표용은 **1부·2부 분할본**으로 운영한다.
+발표 파일을 1부·2부로 나누더라도 표제는 항상 다음으로 통일한다.
 
-| 구분 | 파일 성격 | 핵심 내용 |
-|---|---|---|
-| 1부 | 문제 정의와 AI 작업환경 | 문제 찾기, 사용 조건, 최소 개발 지식, 하네스, ECC, 작업공간, Handoff |
-| 2부 | UX/UI 설계와 구현·검증 실습 | UX/UI, DESIGN.md, 디자인 도구, 구현, 검증, 배포, 오성학교 실습 |
-| MASTER | 전체 흐름 보존용 | 1부와 2부를 합친 전체 편집 기준 |
+> **4. AI·디지털 문제해결 실무 과정**
+
+1부와 2부의 이름은 표제가 아니라 **부제**로 둔다.
+
+| 구분 | 표제 | 부제 | 핵심 내용 |
+|---|---|---|---|
+| 1부 | 4. AI·디지털 문제해결 실무 과정 | 1부. 문제 정의와 AI 작업환경 | 문제 찾기, 사용 조건, 최소 개발 지식, 하네스, ECC, 작업공간, Handoff |
+| 2부 | 4. AI·디지털 문제해결 실무 과정 | 2부. UX/UI 설계와 구현·검증 실습 | UX/UI, DESIGN.md, 디자인 도구, 구현, 검증, 배포, 오성학교 실습 |
+| MASTER | 4. AI·디지털 문제해결 실무 과정 | 전체 흐름 보존용 | 1부와 2부를 합친 전체 편집 기준 |
 
 ## 저장소 구성
 
@@ -34,11 +38,11 @@ OSUNGSCHOOL/
 └─ slides/
    ├─ source/
    │  ├─ osung_ai_digital_problem_solving_master_v17_20260930.pptx
-   │  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pptx
-   │  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pptx
+   │  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pptx
+   │  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pptx
    └─ pdf/
-      ├─ osung_ai_digital_problem_solving_part1_workspace_20260930.pdf
-      └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930.pdf
+      ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pdf
+      └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pdf
 ```
 
 ## 강의 구성 원칙
