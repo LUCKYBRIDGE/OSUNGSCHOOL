@@ -21,7 +21,7 @@
       range.selectNodeContents(t);
       const rr = range.getBoundingClientRect();
       if (rr.width === 0) continue;
-      // 최소 크기(DESIGN.md): 본문 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 속 글자는 제외
+      // 최소 크기(DESIGN.md): 그 밖의 글자 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 속 글자는 제외
       if (!el.closest('.mock')) {
         const fs = parseFloat(getComputedStyle(el).fontSize);
         const min = el.closest('.ft') ? 14 : el.closest('.refs') ? 17 : 20;

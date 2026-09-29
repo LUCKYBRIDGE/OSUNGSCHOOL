@@ -212,7 +212,7 @@ components:
 
 1. `slides/build/part1.html`, `part2.html`을 고친다(공통 스타일은 `deck.css`).
 2. `slides/build/build.sh part1`(또는 `part2`)로 PDF를 만든다. Chrome headless가 `slides/pdf/`에 PDF를 쓰고, `qa.js` 자동 검사 결과를 출력한다.
-3. 자동 검사는 넘침, 본문 영역 밖 글자, 최소 글자 크기 미달(본문 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 제외), 안전영역 이탈, 상자 겹침을 찾는다. 결과가 `OK`가 아니면 고친 뒤 다시 만든다.
+3. 자동 검사는 넘침, 본문 영역 밖 글자, 최소 글자 크기 미달(그 밖의 글자 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 제외), 안전영역 이탈, 상자 겹침을 찾는다. 결과가 `OK`가 아니면 고친 뒤 다시 만든다.
 4. `python3 contact.py <pdf> <이름>`으로 6장씩 모은 검수 이미지를 만들어 눈으로 확인한다(어색한 줄바꿈, 정보 위계, 목업).
 5. `pdffonts`로 글꼴이 모두 포함(emb yes)됐는지, `pdftotext`로 대체 문자(�)가 없는지 확인한다.
 6. 같은 문제가 두 번 나오면 이 문서 또는 `CONTENT_STYLE_GUIDE.md`에 규칙을 더하고 `docs/GUIDELINE_CHANGELOG.md`에 이유를 적는다.
