@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>2부. UX/UI 설계와 구현·검증 실습</title>
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+<!-- 01 표지 -->
+<section class="slide cover">
+  <div class="k">2026 찾아가는 학교 컨설팅</div>
+  <h1>4. AI·디지털 문제해결 실무 과정</h1>
+  <div class="sub">2부. UX/UI 설계와 구현·검증 실습</div>
+  <div class="bar"></div>
+  <div class="meta">강릉오성학교 교사 연수<br>2026. 9. 30. · 강사 서정완</div>
+</section>
+
+<!-- 02 2부의 흐름 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">2부의 흐름</div><h2 class="t">2부에서 함께 할 여섯 가지</h2></header>
+  <div class="bd">
+    <div class="agenda">
+      <div class="it"><b>01</b><h4>잘 쓰이는 화면이란</h4><p>그럴싸한 화면과 쓸 수 있는 화면</p></div>
+      <div class="it"><b>02</b><h4>우리 학생을 위한 화면 원칙</h4><p>한 화면 한 행동, 실수해도 돌아가기</p></div>
+      <div class="it"><b>03</b><h4>DESIGN.md</h4><p>화면 기준을 파일로 남긴다</p></div>
+      <div class="it"><b>04</b><h4>그림으로 먼저 확인하기</h4><p>시안 도구는 필요한 만큼만</p></div>
+      <div class="it"><b>05</b><h4>만들고, 확인하고, 공개하기</h4><p>작게 만들고 직접 확인한다</p></div>
+      <div class="it"><b>06</b><h4>실습</h4><p>우리 반 연습 자료 하나 완성하기</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 03 구분 01 -->
+<section class="slide sec">
+  <div class="num">01</div>
+  <h2>잘 돌아가는 것과 잘 쓰이는 것은 다르다</h2>
+  <p>기능을 만드는 데서 멈추지 않고, 학생이 끝까지 쓰는 도구로</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 04 그럴싸한 화면 vs 쓸 수 있는 화면 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">AI는 그럴싸한 화면을 빠르게 만든다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card bad"><span class="chip bad">그럴싸한 화면</span>
+        <ul class="bl">
+          <li>기능이 많다</li>
+          <li>화려한 장식과 움직임이 있다</li>
+          <li>실제 서비스를 그대로 흉내 낸다</li>
+        </ul>
+      </div>
+      <div class="card good"><span class="chip good">쓸 수 있는 화면</span>
+        <ul class="bl">
+          <li>연습할 행동이 분명하다</li>
+          <li>한 번에 하나씩 보인다</li>
+          <li>틀려도 다시 할 수 있다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">기준은 하나: 우리 학생이 혼자 끝까지 할 수 있는가</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 05 나쁜 예 목업 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">예: "영화 예매 사이트처럼 만들어 줘"의 첫 결과</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w55">
+        <div class="mock" style="height:410px">
+          <div class="m-bar"><i></i><i></i><i></i>영화 예매</div>
+          <div class="m-label">지금 상영 중 (10편)</div>
+          <div class="m-posters"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="m-label">좌석 선택</div>
+          <div class="m-seats">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="m-label">결제 수단</div>
+          <div class="m-pay"><span>카드</span><span>간편결제</span><span>포인트</span><span>상품권</span><span>휴대폰</span></div>
+          <div class="m-ad">지금 가입하면 50% 할인!<small>닫기 ×</small></div>
+        </div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>영화 10편이 한 화면에</li>
+          <li>좌석 100개</li>
+          <li>갑자기 뜨는 광고</li>
+          <li>결제 수단 5가지</li>
+          <li>작은 글자와 작은 버튼</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>화면은 설명을 위해 단순하게 그린 예시</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 06 좋은 예 목업 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">교사가 다듬으면: 연습할 행동이 보이는 화면</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w55">
+        <div class="mock" style="height:410px">
+          <div class="m-steps"><span class="on">1 영화</span><span>2 시간</span><span>3 좌석</span><span>4 결제</span></div>
+          <div class="m-q">보고 싶은 영화를 눌러 주세요</div>
+          <div class="m-cards">
+            <div class="m-card sel"><div class="m-img"></div><b>우리들의 여름</b></div>
+            <div class="m-card"><div class="m-img b"></div><b>로봇 친구</b></div>
+          </div>
+          <div class="m-btns"><span class="m-btn">← 이전</span><span class="m-btn go">다음</span></div>
+        </div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>영화 2편으로 시작한다</li>
+          <li>한 화면에 한 단계</li>
+          <li>큰 그림과 큰 버튼</li>
+          <li>지금 몇 단계인지 보인다</li>
+          <li>언제든 '이전'으로 돌아간다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">현실을 무작정 줄이는 것이 아니라, 학습 목표에 맞게 단계를 설계한다</div>
+  </div>
+  <footer class="ft"><span>화면은 설명을 위해 단순하게 그린 예시</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 07 UX와 UI -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">UX는 사용하는 과정, UI는 보이는 화면</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card blue"><span class="chip">UX · 사용 경험</span>
+        <p>시작부터 끝까지의 전체 경험<br>순서 · 이해 · 실수 · 되돌아가기 · 완료</p>
+        <p class="cap">학교 행사의 동선</p>
+      </div>
+      <div class="card"><span class="chip gray">UI · 화면 요소</span>
+        <p>눈에 보이고 누르는 것<br>버튼 · 글자 · 색 · 배치</p>
+        <p class="cap">행사장의 안내 표지판</p>
+      </div>
+    </div>
+    <div class="take">표지판이 예뻐도 동선이 꼬이면 길을 잃는다. 흐름을 먼저 정한다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 08 사용자 흐름 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">화면보다 흐름을 먼저 그린다</h2><p class="lead">예: 카페 주문 연습</p></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>시작</h4><p>큰 '시작' 버튼 하나</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>메뉴</h4><p>음료 그림 2개 중 고르기</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>크기</h4><p>작은 컵과 큰 컵</p></div><i class="ar"></i>
+      <div class="step"><span class="n">4</span><h4>확인</h4><p>고른 것을 보고 '주문하기'</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">5</span><h4>완료</h4><p>칭찬과 '다시 하기'</p></div>
+    </div>
+    <div class="back">잘못 누르면 언제든 '이전'으로 돌아가고, 틀리면 다시 고를 수 있다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 09 흐름을 글로 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 잘 쓰이는 화면이란</div><h2 class="t">흐름을 글로 적어 주면 AI가 정확히 만든다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="code"><span class="fname">사용자 흐름 (PROJECT_OVERVIEW.md에 추가)</span>1. 시작: 큰 '시작' 버튼 하나
+2. 메뉴 고르기: 음료 그림 2개 중 하나 누르기
+3. 크기 고르기: '작은 컵' / '큰 컵'
+4. 주문 확인: 고른 것을 보여 주고 '주문하기'
+5. 완료: 칭찬 문구와 '다시 하기'
+- 언제든 '이전' 버튼으로 돌아간다
+- 두 번 틀리면 정답 버튼을 살짝 강조한다</div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>화면 수와 버튼 수가<br>정해진다</li>
+          <li>틀렸을 때의 흐름은<br>교사만 정할 수 있다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 10 구분 02 -->
+<section class="slide sec">
+  <div class="num">02</div>
+  <h2>우리 학생을 위한 화면 원칙</h2>
+  <p>원칙은 출발점이고, 기준은 우리 학생이다</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 11 화면 원칙 6가지 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 우리 학생을 위한 화면 원칙</div><h2 class="t">특수교육 자료의 화면 원칙</h2></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card"><h3>한 화면, 한 행동</h3><p>지금 할 일 하나만 보이게 한다</p></div>
+      <div class="card"><h3>선택지는 목표에 맞게</h3><p>2개로 시작해 익숙해지면 늘린다</p></div>
+      <div class="card"><h3>그림과 글자를 함께</h3><p>글을 못 읽어도 고를 수 있게 한다</p></div>
+      <div class="card"><h3>지금 어디인지 보이게</h3><p>단계 표시로 남은 과정을 알린다</p></div>
+      <div class="card"><h3>실수해도 돌아가게</h3><p>'이전'과 '다시 하기'를 늘 둔다</p></div>
+      <div class="card"><h3>누르기 쉬운 크기</h3><p>버튼은 크게, 버튼 사이는 넉넉히</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 12 학생별 조절 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 우리 학생을 위한 화면 원칙</div><h2 class="t">같은 자료도 학생에 따라 조절할 수 있게 만든다</h2><p class="lead">교사용 설정 하나로 난이도를 바꾼다</p></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card blue"><span class="chip">학생 A</span><p>그림 선택지 2개<br>소리 안내 켜기</p></div>
+      <div class="card blue"><span class="chip">학생 B</span><p>선택지 4개<br>글자 안내</p></div>
+      <div class="card blue"><span class="chip">학생 C</span><p>실제 메뉴판처럼<br>가격 계산까지</p></div>
+    </div>
+    <div class="take">기능을 빼는 것이 아니라, 학습 목표와 수행 수준에 맞춰 조절한다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 13 틀렸을 때 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 우리 학생을 위한 화면 원칙</div><h2 class="t">틀렸을 때의 화면이 학습을 결정한다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>처음 틀리면</h4><p>"다시 골라 볼까요?"</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>또 틀리면</h4><p>정답 버튼을 살짝 강조한다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>그래도 어려우면</h4><p>정답을 보여 주고 함께 누른다</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card good"><span class="chip good">맞았을 때</span><p>바로, 구체적으로: "큰 컵을 골랐어요!"</p></div>
+      <div class="card bad"><span class="chip bad">피할 것</span><p>빨간 X와 경고음만 주는 화면</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 14 구분 03 -->
+<section class="slide sec">
+  <div class="num">03</div>
+  <h2>DESIGN.md: 화면 기준을 파일로</h2>
+  <p>매번 '버튼 크게'라고 말하지 않아도 되게</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 15 DESIGN.md란 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 DESIGN.md</div><h2 class="t">DESIGN.md는 AI를 위한 화면 기준서다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w55">
+        <ul class="bl">
+          <li>색·글자·버튼·간격·하지 않을 것을 적는다</li>
+          <li>AI가 화면을 만들 때마다 먼저 읽는다</li>
+          <li>Google Stitch가 2026년 형식을 공개했고<br>여러 AI 도구가 읽을 수 있다</li>
+        </ul>
+      </div>
+      <div class="fill stack">
+        <div class="card blue"><span class="chip">위: 값</span><p>색 코드, 글자 크기처럼 정확한 수치</p></div>
+        <div class="card"><span class="chip gray">아래: 이유</span><p>왜 그렇게 쓰는지, 무엇을 피하는지</p></div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>출처: Google Labs, Stitch's DESIGN.md format is now open-source (2026. 4. 21.) · github.com/google-labs-code/design.md</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 16 DESIGN.md 예시 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 DESIGN.md</div><h2 class="t">DESIGN.md 예시: 학습자료 화면</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="stack">
+        <span class="chip">위: 값</span>
+        <div class="code mono">---
+name: 오성 생활연습
+colors:
+  primary: "#1D4ED8"
+typography:
+  body:
+    fontFamily: Pretendard
+    fontSize: 24px
+---</div>
+      </div>
+      <div class="stack">
+        <span class="chip gray">아래: 이유</span>
+        <div class="code mono">## Overview
+학생이 혼자 끝까지 해 보는
+연습 화면
+## Do's and Don'ts
+- 한 화면에 행동 하나
+- 버튼 높이 64px 이상
+- 빨간색만으로 틀림을
+  알리지 않는다</div>
+      </div>
+    </div>
+    <div class="take">초안은 AI가 쓰고, 교사는 기준을 고친다. 이 강의자료도 DESIGN.md로 관리한다</div>
+  </div>
+  <footer class="ft"><span>형식: Google DESIGN.md 명세 (alpha, 2026. 9. 확인)</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 17 DESIGN.md 요청 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 DESIGN.md</div><h2 class="t">DESIGN.md를 만드는 요청문</h2></header>
+  <div class="bd">
+    <div class="code">PROJECT_OVERVIEW.md를 읽고 DESIGN.md 초안을 만들어 줘.
+- 대상: 고등부 학생, 학교 태블릿 가로 화면
+- 한 화면에 행동 하나, 버튼 높이 64px 이상, 본문 글자 24px 이상
+- 색만으로 정답·오답을 구분하지 않는다
+- Google DESIGN.md 형식: 맨 위에 값, 아래에 이유
+만든 뒤에는 내가 고칠 만한 부분 3가지를 알려 줘.</div>
+    <div class="take">마지막 줄처럼 '고칠 곳을 알려 달라'고 하면 교사의 판단이 들어갈 자리가 생긴다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 18 구분 04 -->
+<section class="slide sec">
+  <div class="num">04</div>
+  <h2>코드보다 먼저 그림으로 확인한다</h2>
+  <p>시안 도구는 필요한 만큼만 고른다</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 19 그림으로 먼저 실패하기 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">코드로 고치기 전에 그림으로 실패해 본다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>시안 만들기</h4><p>DESIGN.md를 주고 화면을 그리게 한다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>학생 눈으로 보기</h4><p>무엇을 눌러야 할지 바로 보이나?</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>2~3개 비교</h4><p>고칠 점을 말로 짚어 다시 그린다</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>확정 후 구현</h4><p>정한 시안과 DESIGN.md를 함께 준다</p></div>
+    </div>
+    <div class="take">그림은 버리고 다시 그리면 되지만, 코드는 고칠수록 꼬인다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 20 도구 고르기 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">시안 도구는 필요한 만큼만 고른다</h2></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:36%">이럴 때</th><th style="width:34%">도구</th><th>얻는 것</th></tr>
+      <tr><td>모양만 빠르게 보고 싶다</td><td>ChatGPT · Gemini 이미지</td><td>화면 그림 시안</td></tr>
+      <tr><td>눌러 보며 흐름을 보고 싶다</td><td>Google Stitch · Claude Design</td><td>클릭되는 시안</td></tr>
+      <tr><td>여럿이 정밀하게 다듬는다</td><td>Figma</td><td>컴포넌트와 디자인 시스템</td></tr>
+    </table>
+    <div class="take">오늘 실습은 첫 줄, 그림 시안이면 충분하다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 21 그림 시안 요청 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">그림 시안은 이렇게 요청하고 이렇게 고친다</h2></header>
+  <div class="bd">
+    <div class="code">DESIGN.md를 참고해 '메뉴 고르기' 화면 시안을 그려 줘.
+태블릿 가로 화면, 음료 그림 2개, 큰 버튼, 위쪽에 '1/4 단계' 표시.</div>
+    <div class="grid g3">
+      <div class="card line"><p>"버튼 사이를 더 넓혀 줘"</p></div>
+      <div class="card line"><p>"글자는 그림 아래로"</p></div>
+      <div class="card line"><p>"배경 장식은 모두 빼 줘"</p></div>
+    </div>
+    <div class="take warn">그림 속 한글은 틀리게 나올 수 있다. 글자보다 배치와 크기를 본다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 22 Stitch와 Claude Design -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">Google Stitch와 Claude Design: 눌러 보는 시안</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip navy">Google Stitch</span>
+        <ul class="bl">
+          <li>말로 화면을 만들고 여러 안을 비교한다</li>
+          <li>화면을 이어 클릭되는 시안을 만든다</li>
+          <li>DESIGN.md를 가져오고 내보낸다</li>
+          <li>Antigravity 등 개발 도구로 넘긴다</li>
+        </ul>
+      </div>
+      <div class="card"><span class="chip navy">Claude Design</span>
+        <ul class="bl">
+          <li>대화·댓글·직접 수정으로 다듬는다</li>
+          <li>디자인 시스템을 자동으로 적용한다</li>
+          <li>PDF·PPTX·HTML로 내보낸다</li>
+          <li>Claude Code로 넘겨 구현한다</li>
+        </ul>
+      </div>
+    </div>
+    <p class="cap">Claude Design은 유료 플랜의 연구 프리뷰(2026. 4. 출시). 기능과 요금은 사용 전에 다시 확인한다</p>
+  </div>
+  <footer class="ft"><span>출처: Google Labs, Introducing "vibe design" with Stitch (2026. 3.) · Anthropic, Introducing Claude Design (2026. 4.)</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 23 Figma와 Figma MCP -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">Figma: 여럿이 정밀하게 다듬는 설계 공간</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip navy">Figma</span>
+        <ul class="bl">
+          <li>컴포넌트: 반복되는 버튼을 한 번에 관리</li>
+          <li>오토 레이아웃: 내용에 맞춰 늘고 준다</li>
+          <li>변수: 색·간격 규칙을 이름으로 관리</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">Figma MCP</span>
+        <ul class="bl">
+          <li>AI가 그림이 아니라 디자인 구조를 읽는다</li>
+          <li>지원 환경에서는 AI가 Figma에 직접 그린다</li>
+          <li>만든 웹 화면을 Figma로 가져와 다듬는다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take warn">요금제와 권한 조건에 따라 쓸 수 있는 기능이 다르다. 사용 전에 확인한다</div>
+  </div>
+  <footer class="ft"><span>출처: Figma Developer Docs, Figma MCP server · Write to canvas · Code to canvas (2026. 9. 확인)</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 24 도구가 달라도 흐름은 같다 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 그림으로 먼저 확인하기</div><h2 class="t">도구가 달라도 흐름은 같다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step blue"><span class="n">1</span><h4>DESIGN.md</h4><p>화면 기준</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>시안</h4><p>그림, Stitch,<br>Figma 등</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>교사 피드백</h4><p>학생 눈으로 고친다</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>구현 AI</h4><p>확정 시안과 기준을 받아 만든다</p></div>
+    </div>
+    <div class="take">기준 파일이 도구 사이를 잇는다. 도구를 바꿔도 DESIGN.md는 그대로 쓴다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 25 구분 05 -->
+<section class="slide sec">
+  <div class="num">05</div>
+  <h2>만들고, 확인하고, 공개한다</h2>
+  <p>작게 만들고, 직접 확인하고, 주소 하나로 연다</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 26 작게 나눠 만들기 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">한 번에 다 만들지 않는다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>1단계 화면</h4><p>시작과 메뉴 고르기</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">2</span><h4>확인</h4><p>눌러 보고 고친다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>다음 단계 추가</h4><p>크기 고르기, 주문 확인</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>전체 확인</h4><p>처음부터 끝까지 해 본다</p></div>
+    </div>
+    <div class="take">요청 하나에 화면 하나, 완료 기준 하나</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 27 구현 요청문 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">구현은 이렇게 요청한다</h2></header>
+  <div class="bd">
+    <div class="code">AGENTS.md, PROJECT_OVERVIEW.md, DESIGN.md를 읽고
+1단계 '메뉴 고르기' 화면만 만들어 줘.
+- index.html · style.css · script.js 세 파일, 설치 없이 브라우저에서 열리게
+- 완료 기준: 음료를 누르면 테두리가 두꺼워지고 '다음' 버튼이 켜진다
+- 직접 열어서 확인하고, 확인한 방법을 알려 줘</div>
+    <div class="take">읽을 파일, 만들 범위, 완료 기준, 확인 방법을 한 번에 준다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 28 검토와 검증 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">검토와 검증은 다르다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">검토 · 읽어 보고 판단</span>
+        <ul class="bl">
+          <li>요청한 대로 만들었나?</li>
+          <li>DESIGN.md 기준을 지켰나?</li>
+          <li>필요 없는 기능이 붙지 않았나?</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">검증 · 직접 해 보고 확인</span>
+        <ul class="bl">
+          <li>버튼을 누르면 실제로 되나?</li>
+          <li>새로고침해도 괜찮은가?</li>
+          <li>태블릿 화면에서 깨지지 않나?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">AI의 '완료했습니다'는 검증이 아니다. 검토는 새 대화에 맡기면 더 잘 보인다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 29 5분 확인 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">교사가 직접 하는 5분 확인</h2></header>
+  <div class="bd">
+    <div class="sum">
+      <div class="p"><b>1</b><div><h4>학생처럼 처음부터 끝까지 해 본다</h4></div></div>
+      <div class="p"><b>2</b><div><h4>일부러 틀리게 눌러 본다</h4></div></div>
+      <div class="p"><b>3</b><div><h4>새로고침과 뒤로 가기를 눌러 본다</h4></div></div>
+      <div class="p"><b>4</b><div><h4>실제 태블릿에서 연다</h4></div></div>
+      <div class="p"><b>5</b><div><h4>글을 읽지 않고 그림만으로 할 수 있는지 본다</h4></div></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 30 배포 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">배포: 주소 하나로 태블릿에서 연다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>GitHub에 올리기</h4><p>저장소 이름은 영어로<br>(예: cafe-order)</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>Pages 켜기</h4><p>저장소 설정에서 켠다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>주소 받기</h4><p class="fname">아이디.github.io<br>/cafe-order</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>QR코드로 열기</h4><p>태블릿 카메라로 연다</p></div>
+    </div>
+    <div class="take warn">무료 요금제에서는 공개 저장소를 쓰고, 사이트는 누구나 볼 수 있다. 학생 이름·사진·기록은 넣지 않는다</div>
+  </div>
+  <footer class="ft"><span>출처: GitHub Docs, About GitHub Pages · Creating a GitHub Pages site (2026. 9. 확인)</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 31 배포 후 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 만들고, 확인하고, 공개하기</div><h2 class="t">공개한 뒤가 진짜 시작이다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>학생이 써 본다</h4><p>교사는 옆에서 지켜본다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>멈춘 곳을 적는다</h4><p>어느 화면에서, 무엇을 하려다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>흐름부터 고친다</h4><p>기능을 더하기 전에</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>다시 공개한다</h4><p>같은 주소로 바로 반영</p></div>
+    </div>
+    <div class="back">기록은 이렇게: "2단계에서 / 큰 컵을 누르려다 / 버튼이 아니라 그림을 눌렀다"</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 32 구분 06 -->
+<section class="slide sec">
+  <div class="num">06</div>
+  <h2>실습: 우리 반 연습 자료 하나</h2>
+  <p>작게 정하고, 끝까지 완성한다</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 33 실습 주제 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">실습 주제: 3~5단계로 끝나는 장면 하나</h2></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card"><h3>생활 자립</h3><p>카페 주문, 편의점,<br>병원 접수</p></div>
+      <div class="card"><h3>교통</h3><p>버스 타고 내리기, 교통카드 찍기</p></div>
+      <div class="card"><h3>학교생활</h3><p>오늘 일정, 준비물, 급식 순서</p></div>
+      <div class="card"><h3>의사소통</h3><p>감정 고르기, 도움 요청하기</p></div>
+      <div class="card"><h3>직업·전환</h3><p>작업 순서 익히기, 물건 분류</p></div>
+      <div class="card blue"><h3>우리 반의 불편</h3><p>1부에서 적은 문제 한 문장</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 34 오늘의 목표 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">오늘의 목표: 작게, 끝까지</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card bad"><span class="chip bad">피할 목표</span><p>학생 생활 전반을 관리하는 플랫폼</p></div>
+      <div class="card good"><span class="chip good">오늘의 목표</span><p>카페에서 음료 한 잔 주문하기 3단계</p></div>
+    </div>
+    <div class="card line"><h3>오늘 완성의 기준</h3>
+      <ul class="bl">
+        <li>주소나 파일로 화면이 열린다</li>
+        <li>처음부터 끝까지 해 볼 수 있다</li>
+        <li>틀리거나 잘못 누르면 돌아갈 수 있다</li>
+      </ul>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 35 실습 순서 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">실습 순서</h2><p class="lead">시간은 예시다. 현장 상황에 맞춰 조절한다</p></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>문제와 조건</h4><p>한 문장과<br>사용 조건<br>(10분)</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>문서 초안</h4><p>개요 문서와<br>규칙 파일<br>(10분)</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>화면 기준</h4><p>DESIGN.md,<br>시안은 선택<br>(10분)</p></div><i class="ar"></i>
+      <div class="step"><span class="n">4</span><h4>구현과 확인</h4><p>단계별로<br>만들고 확인<br>(20분)</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">5</span><h4>공유</h4><p>주소나<br>화면을 나눈다<br>(10분)</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 36 시작 전 질문 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">시작 전에 답할 여섯 가지 질문</h2></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card"><span class="chip">1</span><p>누구를 위한 자료인가?</p></div>
+      <div class="card"><span class="chip">2</span><p>어떤 행동을 연습하나?</p></div>
+      <div class="card"><span class="chip">3</span><p>단계는 몇 개인가?</p></div>
+      <div class="card"><span class="chip">4</span><p>한 화면에 무엇만 보여 주나?</p></div>
+      <div class="card"><span class="chip">5</span><p>맞을 때와 틀릴 때<br>무엇을 보여 주나?</p></div>
+      <div class="card"><span class="chip">6</span><p>어디까지 되면 오늘 완성인가?</p></div>
+    </div>
+    <div class="take">답을 짧게 적어 AI에게 주고, PROJECT_OVERVIEW.md 초안을 만들게 한다</div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 37 막혔을 때 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">막혔을 때는 이렇게 말한다</h2></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:36%">상황</th><th>이렇게 요청한다</th></tr>
+      <tr><td>화면이 열리지 않는다</td><td>"오류 메시지를 붙여 넣을게. 원인과 고치는 방법을 알려 줘"</td></tr>
+      <tr><td>AI가 너무 많이 바꿨다</td><td>"방금 바꾼 것을 되돌리고, 요청한 부분만 다시 해 줘"</td></tr>
+      <tr><td>대화가 길어져 헷갈린다</td><td>"HANDOFF.md를 갱신해 줘" → 새 대화에서 이어 가기</td></tr>
+      <tr><td>같은 실패가 세 번째다</td><td>멈추고 요청을 더 작게 나눈다</td></tr>
+    </table>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 38 결과물 폴더 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">06 실습</div><h2 class="t">실습 결과는 폴더째 남긴다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="tree" style="--c:330px">
+          <div class="r"><span class="nm">카페주문연습/</span><span class="d">오늘 만든 자료</span></div>
+          <div class="r"><span class="nm i1">AGENTS.md</span><span class="d">지킬 규칙</span></div>
+          <div class="r"><span class="nm i1">PROJECT_OVERVIEW.md</span><span class="d">누구를·무엇을·어디까지</span></div>
+          <div class="r"><span class="nm i1">DESIGN.md</span><span class="d">화면 기준</span></div>
+          <div class="r"><span class="nm i1">HANDOFF.md</span><span class="d">지금 상태와 다음 할 일</span></div>
+          <div class="r"><span class="nm i1">index.html 외</span><span class="d">화면 파일과 그림</span></div>
+          <div class="r"><span class="nm i1">README.md</span><span class="d">쓰는 방법과 주소</span></div>
+        </div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>다음 주에 열어도<br>이어서 할 수 있다</li>
+          <li>다른 선생님도<br>고쳐 쓸 수 있다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 39 오늘 기억할 문장 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">마무리</div><h2 class="t">오늘 기억할 네 문장</h2></header>
+  <div class="bd">
+    <div class="sum">
+      <div class="p"><b>1</b><div><h4>AI는 코드를 만들고, 교사는 무엇이 왜 필요한지 정한다</h4></div></div>
+      <div class="p"><b>2</b><div><h4>좋은 질문 한 번보다 좋은 작업환경이 오래 간다</h4></div></div>
+      <div class="p"><b>3</b><div><h4>그럴싸한 화면보다 학생이 헤매지 않는 흐름이 먼저다</h4></div></div>
+      <div class="p"><b>4</b><div><h4>'완료했습니다'보다 직접 확인한 결과를 믿는다</h4></div></div>
+    </div>
+  </div>
+  <footer class="ft"><span>2부. UX/UI 설계와 구현·검증 실습</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 40 참고 자료 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">2부 참고 자료</div><h2 class="t">참고 자료 (2026년 9월 확인)</h2></header>
+  <div class="bd">
+    <ul class="refs">
+      <li>Google Labs, Introducing "vibe design" with Stitch (2026. 3. 18.)<span>blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design</span></li>
+      <li>Google Labs, Stitch's DESIGN.md format is now open-source (2026. 4. 21.)<span>blog.google/innovation-and-ai/models-and-research/google-labs/stitch-design-md</span></li>
+      <li>DESIGN.md 명세 (alpha)<span>github.com/google-labs-code/design.md</span></li>
+      <li>Anthropic, Introducing Claude Design by Anthropic Labs (2026. 4.)<span>anthropic.com/news/claude-design-anthropic-labs</span></li>
+      <li>Figma Developer Docs, Figma MCP server · Write to canvas · Code to canvas<span>developers.figma.com/docs/figma-mcp-server</span></li>
+      <li>GitHub Docs, About GitHub Pages · Creating a GitHub Pages site<span>docs.github.com/pages</span></li>
+      <li>W3C, WCAG 2.2 (누르는 대상의 크기, 색에만 의존하지 않기)<span>w3.org/TR/WCAG22</span></li>
+    </ul>
+  </div>
+  <footer class="ft"><span>도구 기능과 요금제는 바뀔 수 있으므로 사용 전에 다시 확인한다</span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- 41 마무리 -->
+<section class="slide sec">
+  <div class="num">Q&amp;A</div>
+  <h2>질문과 나눔</h2>
+  <p>오늘 만든 자료를 다음 주 수업에서 한 번 써 보세요</p>
+  <footer class="ft"><span></span><span class="pg">2부 · </span></footer>
+</section>
+
+<!-- /slides -->
+<pre id="qa"></pre>
+<script src="qa.js"></script>
+</body>
+</html>

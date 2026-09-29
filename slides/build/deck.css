@@ -1,0 +1,194 @@
+/* OSUNGSCHOOL 연수 슬라이드 공통 스타일 — 값은 DESIGN.md와 같아야 한다 */
+@page { size: 1280px 720px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: #6b7280; }
+body {
+  counter-reset: pg;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  color: #1F2933;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.slide {
+  counter-increment: pg;
+  width: 1280px; height: 720px;
+  position: relative; overflow: hidden;
+  background: #fff;
+  display: flex; flex-direction: column;
+  padding: 44px 72px 24px;
+  break-after: page; page-break-after: always;
+}
+@media screen { .slide { margin: 24px auto; box-shadow: 0 4px 16px rgba(0,0,0,.35); } }
+@media print { #qa { display: none; } }
+
+/* 머리 · 본문 · 바닥 */
+.hd { flex: none; }
+.kicker { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; color: #1D5FD1; }
+.kicker::before { content: ""; width: 30px; height: 5px; border-radius: 3px; background: #1D5FD1; }
+.t { margin-top: 10px; font-size: 40px; line-height: 1.28; font-weight: 800; color: #1B365D; letter-spacing: -0.5px; }
+.lead { margin-top: 10px; font-size: 25px; line-height: 1.45; color: #46546A; }
+.bd { flex: 1; min-height: 0; margin-top: 28px; display: flex; flex-direction: column; justify-content: safe center; gap: 22px; overflow: hidden; }
+.ft { flex: none; height: 24px; margin-top: 14px; display: flex; justify-content: space-between; align-items: flex-end; font-size: 14px; color: #6B7785; }
+.ft .pg::after { content: counter(pg); }
+
+/* 표지 · 구분 */
+.slide.sec, .slide.cover { background: #1B365D; color: #fff; justify-content: center; padding: 0 120px; }
+.cover .k { font-size: 26px; font-weight: 700; color: #C9D6EA; }
+.cover h1 { margin-top: 28px; font-size: 60px; line-height: 1.2; font-weight: 800; }
+.cover .sub { margin-top: 24px; font-size: 38px; font-weight: 800; color: #F2A33A; }
+.cover .bar { width: 90px; height: 8px; margin-top: 44px; border-radius: 4px; background: #F2A33A; }
+.cover .meta { margin-top: 40px; font-size: 25px; line-height: 1.7; color: #C9D6EA; }
+.sec .num { font-size: 96px; line-height: 1; font-weight: 800; color: #F2A33A; }
+.sec h2 { margin-top: 22px; font-size: 54px; line-height: 1.25; font-weight: 800; }
+.sec p { margin-top: 20px; font-size: 28px; line-height: 1.5; color: #C9D6EA; }
+.sec .ft, .cover .ft { position: absolute; left: 120px; right: 72px; bottom: 24px; color: #9FB2CC; }
+
+/* 공통 배치 */
+.grid { display: grid; gap: 22px; }
+.g2 { grid-template-columns: 1fr 1fr; }
+.g3 { grid-template-columns: repeat(3, 1fr); }
+.g4 { grid-template-columns: repeat(4, 1fr); }
+.row { display: flex; gap: 28px; min-height: 0; align-items: center; }
+.row > .w50 { flex: 0 0 48%; min-width: 0; }
+.row > .w55 { flex: 0 0 55%; min-width: 0; }
+.row > .w60 { flex: 0 0 60%; min-width: 0; }
+.row > .fill { flex: 1; min-width: 0; }
+.stack { display: flex; flex-direction: column; gap: 18px; min-height: 0; }
+.center { justify-content: center; }
+
+/* 카드 · 칩 */
+.card { background: #F3F5F8; border-radius: 16px; padding: 22px 26px; display: flex; flex-direction: column; gap: 10px; min-height: 0; }
+.card h3 { font-size: 28px; line-height: 1.3; font-weight: 800; color: #1B365D; }
+.card p { font-size: 24px; line-height: 1.45; color: #2B3644; }
+.card.blue { background: #EDF3FD; }
+.card.amber { background: #FFF4E0; }
+.card.good { background: #EAF6EE; }
+.card.bad { background: #FDEEEC; }
+.card.line { background: #fff; border: 2px solid #D5DCE5; }
+.chip { align-self: flex-start; display: inline-block; padding: 5px 16px; border-radius: 999px; font-size: 20px; line-height: 1.3; font-weight: 800; color: #fff; background: #1D5FD1; }
+.chip.gray { background: #5B6878; }
+.chip.good { background: #1E7B45; }
+.chip.bad { background: #B42318; }
+.chip.amber { background: #B45309; }
+.chip.navy { background: #1B365D; }
+
+/* 목록 */
+ul.bl { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+ul.bl li { position: relative; padding-left: 30px; font-size: 27px; line-height: 1.42; }
+ul.bl li::before { content: ""; position: absolute; left: 4px; top: 0.71em; width: 11px; height: 11px; border-radius: 50%; background: #1D5FD1; transform: translateY(-50%); }
+.card ul.bl { gap: 10px; }
+.card ul.bl li { font-size: 24px; }
+.card.bad ul.bl li::before { background: #B42318; }
+.card.good ul.bl li::before { background: #1E7B45; }
+.card:not(.blue):not(.good):not(.bad) ul.bl li::before { background: #5B6878; }
+
+/* 핵심 한 줄 */
+.take { flex: none; background: #1B365D; color: #fff; border-radius: 14px; padding: 16px 26px; font-size: 25px; line-height: 1.4; font-weight: 700; }
+.take.warn { background: #FFF4E0; color: #7A3A06; border: 2px solid #F2C27A; }
+
+/* 코드 · 요청문 */
+.code { background: #F3F5F8; border-radius: 16px; border-left: 6px solid #1D5FD1; padding: 22px 28px; font-size: 23px; line-height: 1.6; white-space: pre-wrap; color: #1F2933; }
+.code.mono { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 21px; line-height: 1.5; }
+.code .fname { display: block; margin-bottom: 6px; }
+.code .c { color: #6B7785; }
+.code .k { color: #1D5FD1; font-weight: 700; }
+.fname { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 20px; font-weight: 700; color: #5B6878; }
+
+/* 단계 */
+.steps { display: flex; align-items: stretch; }
+.step { flex: 1; min-width: 0; background: #F3F5F8; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+.step.blue { background: #EDF3FD; }
+.step .n { width: 44px; height: 44px; border-radius: 50%; background: #1D5FD1; color: #fff; font-size: 24px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.step h4 { font-size: 26px; line-height: 1.3; font-weight: 800; color: #1B365D; }
+.step p { font-size: 22px; line-height: 1.45; color: #2B3644; }
+.ar { flex: none; width: 40px; display: flex; align-items: center; justify-content: center; }
+.ar::before { content: ""; width: 14px; height: 14px; margin-left: -6px; border-top: 5px solid #9AA8B8; border-right: 5px solid #9AA8B8; transform: rotate(45deg); }
+.back { flex: none; display: flex; align-items: center; gap: 14px; background: #FFF4E0; border: 2px dashed #F2C27A; border-radius: 14px; padding: 12px 22px; font-size: 23px; color: #7A3A06; font-weight: 700; }
+
+/* 표 */
+table.tb { width: 100%; border-collapse: collapse; }
+.tb th { background: #1B365D; color: #fff; text-align: left; font-size: 22px; font-weight: 700; padding: 12px 18px; }
+.tb td { font-size: 23px; line-height: 1.4; padding: 11px 18px; border-bottom: 2px solid #D5DCE5; vertical-align: middle; }
+.tb td:first-child { font-weight: 800; color: #1B365D; }
+.tb .mono { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 21px; }
+
+/* 목차 */
+.agenda { display: flex; flex-direction: column; gap: 14px; }
+.agenda .it { display: grid; grid-template-columns: 70px 400px 1fr; align-items: center; background: #F3F5F8; border-radius: 14px; padding: 14px 24px; }
+.agenda .it b { font-size: 32px; font-weight: 800; color: #1D5FD1; }
+.agenda .it h4 { font-size: 27px; font-weight: 800; color: #1B365D; }
+.agenda .it p { font-size: 24px; color: #46546A; }
+
+/* 대화 */
+.dlg { display: flex; flex-direction: column; gap: 14px; }
+.dlg .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.bub { border-radius: 16px; padding: 14px 22px; font-size: 24px; line-height: 1.42; display: flex; gap: 14px; align-items: center; }
+.bub.ai { background: #F3F5F8; }
+.bub.me { background: #EDF3FD; }
+.bub .who { flex: none; font-size: 20px; font-weight: 800; color: #fff; background: #5B6878; border-radius: 999px; padding: 3px 12px; }
+.bub.me .who { background: #1D5FD1; }
+
+/* 큰 숫자 · 인용 */
+.big { display: flex; align-items: center; gap: 26px; }
+.big .v { font-size: 110px; line-height: 1; font-weight: 800; color: #1B365D; }
+.big .v.hi { color: #1D5FD1; }
+.big .arrow { font-size: 60px; color: #9AA8B8; }
+.cap { margin-top: 8px; font-size: 22px; color: #5B6878; }
+.quote { font-size: 40px; line-height: 1.35; font-weight: 800; color: #1B365D; border-left: 10px solid #F2A33A; padding-left: 30px; }
+.quote small { display: block; margin-top: 10px; font-size: 22px; font-weight: 600; color: #5B6878; }
+
+/* 폴더 구조 */
+.tree { background: #F3F5F8; border-radius: 16px; padding: 16px 28px; display: flex; flex-direction: column; }
+.tree .r { display: grid; grid-template-columns: var(--c, 420px) 1fr; gap: 18px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed #C9D2DD; }
+.tree .r:last-child { border-bottom: none; }
+.tree .nm { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 22px; font-weight: 700; color: #1B365D; }
+.tree .d { font-size: 22px; color: #46546A; }
+.tree .i1 { padding-left: 34px; }
+.tree .i2 { padding-left: 68px; }
+
+/* 정리 */
+.sum { display: flex; flex-direction: column; gap: 20px; }
+.sum .p { display: grid; grid-template-columns: 66px 1fr; align-items: start; }
+.sum .p b { width: 52px; height: 52px; border-radius: 50%; background: #1D5FD1; color: #fff; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.sum .p h4 { font-size: 30px; line-height: 1.35; font-weight: 800; color: #1B365D; }
+.sum .p p { margin-top: 4px; font-size: 23px; line-height: 1.4; color: #46546A; }
+
+/* 참고 자료 (읽기용 목록, 최소 17px 허용) */
+.refs { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.refs li { font-size: 19px; line-height: 1.35; color: #2B3644; }
+.refs li span { display: block; font-family: Menlo, monospace; font-size: 16px; color: #6B7785; }
+
+/* 화면 예시(목업): 예시 속 작은 글자는 크기 검사에서 제외 */
+.mock { position: relative; background: #fff; border: 10px solid #2B3644; border-radius: 26px; overflow: hidden; }
+
+/* 목업 내부 요소 */
+.mock .m-bar { height: 34px; background: #EEF1F5; display: flex; align-items: center; gap: 8px; padding: 0 14px; font-size: 14px; color: #5B6878; }
+.mock .m-bar i { width: 10px; height: 10px; border-radius: 50%; background: #C3CCD7; }
+.m-posters { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; padding: 10px 12px; }
+.m-posters span { height: 50px; border-radius: 4px; background: #CBD5E1; }
+.m-posters span:nth-child(3n) { background: #B6C3D3; }
+.m-label { padding: 2px 12px; font-size: 12px; color: #5B6878; }
+.m-seats { display: grid; grid-template-columns: repeat(20, 1fr); gap: 3px; padding: 4px 12px 8px; }
+.m-seats span { height: 8px; border-radius: 2px; background: #94A3B8; }
+.m-pay { display: flex; gap: 6px; padding: 6px 12px; }
+.m-pay span { font-size: 12px; padding: 4px 8px; border-radius: 4px; background: #E2E8F0; color: #46546A; }
+.m-ad { position: absolute; right: 16px; top: 64px; width: 200px; padding: 12px; border-radius: 8px; background: #FDE68A; border: 2px solid #F59E0B; font-size: 15px; font-weight: 800; color: #7A3A06; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.m-ad small { display: block; margin-top: 4px; font-size: 11px; font-weight: 600; }
+.m-steps { display: flex; gap: 8px; padding: 16px 18px 0; }
+.m-steps span { flex: 1; padding: 6px 0; border-radius: 999px; text-align: center; font-size: 16px; font-weight: 800; background: #E2E8F0; color: #5B6878; }
+.m-steps span.on { background: #1D5FD1; color: #fff; }
+.m-q { padding: 14px 18px 0; font-size: 22px; font-weight: 800; color: #1B365D; }
+.m-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 12px 18px; }
+.m-card { border: 3px solid #D5DCE5; border-radius: 14px; padding: 10px; text-align: center; }
+.m-card.sel { border-color: #1D5FD1; box-shadow: 0 0 0 4px #CFE0FB; }
+.m-img { height: 104px; border-radius: 10px; background: linear-gradient(135deg, #FDE2B8, #F6B26B); }
+.m-img.b { background: linear-gradient(135deg, #CFE0FB, #7FA8EE); }
+.m-card b { display: block; margin-top: 8px; font-size: 20px; color: #1B365D; }
+.m-btns { display: flex; justify-content: space-between; align-items: center; padding: 4px 18px 16px; }
+.m-btn { padding: 10px 20px; border-radius: 12px; font-size: 18px; font-weight: 800; background: #E2E8F0; color: #1B365D; }
+.m-btn.go { padding: 12px 44px; font-size: 20px; background: #1D5FD1; color: #fff; }
+
+.card .cap { font-size: 22px; color: #5B6878; }
+.card p.fname, .step p.fname { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 20px; font-weight: 700; color: #1B365D; }
