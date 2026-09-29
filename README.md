@@ -20,7 +20,8 @@
 |---|---|---|---|
 | 1부 | 4. AI·디지털 문제해결 실무 과정 | 1부. 문제 정의와 AI 작업환경 | 문제 찾기, 사용 조건, 최소 개발 지식, 하네스, ECC, 작업공간, Handoff |
 | 2부 | 4. AI·디지털 문제해결 실무 과정 | 2부. UX/UI 설계와 구현·검증 실습 | UX/UI, DESIGN.md, 디자인 도구, 구현, 검증, 배포, 오성학교 실습 |
-| MASTER | 4. AI·디지털 문제해결 실무 과정 | 전체 흐름 보존용 | 1부와 2부를 합친 전체 편집 기준 |
+
+현재 발표 파일은 v21이다. 별도 마스터 파일 없이 1부·2부 원본(`slides/build/part1.html`, `part2.html`)이 기준이다.
 
 ---
 
@@ -69,27 +70,24 @@ GitHub 지침이 변경되면 프로젝트 소스 사본도 가능한 한 최신
 OSUNGSCHOOL/
 ├─ README.md
 ├─ AGENTS.md
-├─ DESIGN.md
+├─ DESIGN.md                      # Google DESIGN.md 형식의 화면 기준
 ├─ CONTENT_STYLE_GUIDE.md
 ├─ SPEAKER_SCRIPT_GUIDE.md
 ├─ docs/
 │  ├─ 00_course_overview.md
-│  ├─ 02_slide_outline.md
-│  ├─ 03_speaker_script.md
-│  ├─ 04_sources.md
-│  ├─ GUIDELINE_CHANGELOG.md
+│  ├─ 02_slide_outline.md         # v21 쪽별 목적과 말할 핵심
+│  ├─ 03_speaker_script.md        # v21 발표 대본 (1부 44쪽·2부 41쪽)
+│  ├─ 04_sources.md               # v21 출처
+│  ├─ v21_revision_analysis.md    # 기존 자료 문제 분석과 변경 내용
+│  ├─ pdf_validation_v21.md       # v21 검수 기록
 │  ├─ lecture_flow_split_20260930.md
-│  ├─ pdf_validation_split_20260930.md
-│  ├─ repository_structure_split_20260930.md
-│  └─ revision notes
+│  ├─ GUIDELINE_CHANGELOG.md
+│  └─ 이전 버전 기록
 └─ slides/
-   ├─ source/
-   │  ├─ osung_ai_digital_problem_solving_master_v17_20260930.pptx
-   │  ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pptx
-   │  └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pptx
+   ├─ build/                      # HTML 원본, 스타일, 자동 검사, PDF 생성 스크립트
    └─ pdf/
-      ├─ osung_ai_digital_problem_solving_part1_workspace_20260930_titlefixed.pdf
-      └─ osung_ai_digital_problem_solving_part2_ux_implementation_20260930_titlefixed.pdf
+      ├─ osung_ai_digital_problem_solving_part1_workspace_v21_20260930.pdf
+      └─ osung_ai_digital_problem_solving_part2_ux_implementation_v21_20260930.pdf
 ```
 
 ---
@@ -98,7 +96,7 @@ OSUNGSCHOOL/
 
 - 용어는 이름만 외우지 않고 **기능·사용 장면·AI에게 요청하는 방법**까지 함께 익힌다.
 - 작은 불편에서 출발해 사용 조건과 최소 개발 지식을 먼저 설명한다.
-- Harness, Loop, Graph, Skill, MCP, Handoff는 정확한 개념과 이해를 돕는 비유를 함께 사용한다.
+- 하네스, 규칙 파일, 스킬, MCP, 인계는 비유 → 실제 파일 → 사용 장면 순서로 한 번만 제대로 설명한다.
 - Everything Claude Code(ECC)는 공개 하네스 사례로 분석하되 학교 현장에 필요한 구조만 가져온다.
 - DESIGN.md는 화면 기준을 정리하는 문서이며 이미지 도안은 필요할 때 활용하는 선택지로 설명한다.
 - 특수교육 교사의 도메인 지식을 사용자 흐름과 UX 설계로 연결한다.
@@ -125,9 +123,11 @@ OSUNGSCHOOL/
 
 ---
 
-## 최신 정리 문서
+## 최신 정리 문서 (v21)
 
-- `docs/lecture_flow_split_20260930.md`: 1부·2부 강의 흐름 및 슬라이드 목록
-- `docs/pdf_validation_split_20260930.md`: 분할본 PDF 검수 기록
-- `docs/repository_structure_split_20260930.md`: 저장소 정리 기준
+- `docs/02_slide_outline.md`: 1부 44쪽·2부 41쪽의 목적과 말할 핵심
+- `docs/lecture_flow_split_20260930.md`: 1부·2부 강의 흐름
+- `docs/v21_revision_analysis.md`: 기존 자료의 문제와 바꾼 내용
+- `docs/pdf_validation_v21.md`: PDF 검수 기록
+- `docs/04_sources.md`: 출처와 v20 대비 바로잡은 사실
 - `docs/GUIDELINE_CHANGELOG.md`: 핵심 지침 변경 이유와 이력

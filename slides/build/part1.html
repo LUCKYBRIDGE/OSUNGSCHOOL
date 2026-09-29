@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>1부. 문제 정의와 AI 작업환경</title>
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+<!-- 01 표지 -->
+<section class="slide cover">
+  <div class="k">2026 찾아가는 학교 컨설팅</div>
+  <h1>4. AI·디지털 문제해결 실무 과정</h1>
+  <div class="sub">1부. 문제 정의와 AI 작업환경</div>
+  <div class="bar"></div>
+  <div class="meta">강릉오성학교 교사 연수<br>2026. 9. 30. · 강사 서정완</div>
+</section>
+
+<!-- 02 1부의 길 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">1부의 흐름</div><h2 class="t">1부에서 함께 볼 다섯 가지</h2></header>
+  <div class="bd">
+    <div class="agenda">
+      <div class="it"><b>01</b><h4>작은 불편에서 시작한다</h4><p>무엇을 만들지 한 문장으로 정한다</p></div>
+      <div class="it"><b>02</b><h4>AI와 말이 통하는 최소 지식</h4><p>웹앱·저장·연결·배포를 알아듣는다</p></div>
+      <div class="it"><b>03</b><h4>질문 한 번에서 작업환경으로</h4><p>AI가 우리 기준을 잊지 않게 한다</p></div>
+      <div class="it"><b>04</b><h4>작업환경을 이루는 것들</h4><p>규칙·문서·스킬·도구·확인</p></div>
+      <div class="it"><b>05</b><h4>작업공간과 인계</h4><p>폴더를 만들고 다음 대화로 넘긴다</p></div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 03 구분 01 -->
+<section class="slide sec">
+  <div class="num">01</div>
+  <h2>작은 불편에서 시작한다</h2>
+  <p>만들 것은 '앱'이 아니라 '해결할 문제'다</p>
+  <footer class="ft"><span></span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 04 예약 종료 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">검색해서 따라 하던 일을 이제는 도구로 만든다</h2><p class="lead">예: "컴퓨터를 1시간 뒤에 꺼지게 하고 싶다"</p></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">예전</span>
+        <ul class="bl">
+          <li>'컴퓨터 예약 종료'를 검색한다</li>
+          <li>명령어를 찾아 복사한다<br><span class="fname">shutdown -s -t 3600</span></li>
+          <li>시간을 초로 계산하고, 틀리면 다시 검색한다</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">지금</span>
+        <ul class="bl">
+          <li>AI에게 필요한 것을 말한다</li>
+          <li>"30분·1시간·2시간 버튼과 취소 버튼이 있는 프로그램을 만들어 줘"</li>
+          <li>버튼 하나로 예약하고, 버튼 하나로 취소한다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">코드를 외우지 않아도, 필요한 것을 분명히 말하면 도구를 만들 수 있다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 05 학교의 작은 불편 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">학교에는 이런 작은 불편이 많다</h2></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card"><h3>매일 반복하는 안내</h3><p>오늘 일정과 준비물을 매번 말로 설명한다</p></div>
+      <div class="card"><h3>순서가 있는 활동</h3><p>손 씻기·급식 순서를 매번 그림으로 보여 준다</p></div>
+      <div class="card"><h3>연습하기 어려운 생활 장면</h3><p>카페 주문·버스 하차를 실제처럼 연습하기 어렵다</p></div>
+      <div class="card"><h3>학생마다 다른 자료</h3><p>같은 활동도 선택지와 그림을 학생별로 바꾼다</p></div>
+      <div class="card"><h3>수업 중 작은 도구</h3><p>타이머·차례 정하기·점수판을 찾아 헤맨다</p></div>
+      <div class="card"><h3>반복되는 문서</h3><p>비슷한 안내문과 점검표를 매번 새로 만든다</p></div>
+    </div>
+    <div class="take">'매번', '다시', '또'가 붙는 일이 좋은 출발점이다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 06 좋은 문제의 조건 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">좋은 문제는 작고, 분명하고, 확인할 수 있다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w50 stack center">
+        <ul class="bl">
+          <li>자주 반복된다</li>
+          <li>누가 쓰는지 분명하다</li>
+          <li>한 문장으로 말할 수 있다</li>
+          <li>작게 시작할 수 있다</li>
+          <li>잘됐는지 확인할 수 있다</li>
+        </ul>
+      </div>
+      <div class="fill stack center">
+        <div class="card bad"><span class="chip bad">피할 예</span><p>학생 생활 전반을 관리하는 앱</p></div>
+        <div class="card good"><span class="chip good">좋은 예</span><p>내릴 정류장에서 하차 벨을 누르는 연습 화면</p></div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 07 한 문장 틀 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">문제를 한 문장으로 적어 본다</h2></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:19%">누가</th><th style="width:17%">어떤 상황에서</th><th style="width:32%">무엇을 어려워해서</th><th>무엇을 할 수 있게 돕는가</th></tr>
+      <tr><td>고등부 학생이</td><td>카페에서</td><td>메뉴를 고르고 주문하는 순서를 어려워해서</td><td>3단계 주문을 혼자 반복 연습하게 돕는다</td></tr>
+      <tr><td>중학부 학생이</td><td>버스에서</td><td>내릴 곳을 알고 벨을 누르는 것을 어려워해서</td><td>안내 방송을 듣고 벨을 누르는 연습을 돕는다</td></tr>
+    </table>
+    <div class="take">이 한 문장이 AI에게 보내는 첫 요청의 중심이 된다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 08 사용 조건 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">무엇을 만들지는 사용 조건이 정한다</h2></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:18%">조건</th><th style="width:44%">생각해 볼 질문</th><th>예시 답</th></tr>
+      <tr><td>누가</td><td>학생 혼자? 교사와 함께? 교사만?</td><td>학생이 혼자 한다</td></tr>
+      <tr><td>어디서</td><td>교실 PC? 태블릿? 휴대폰?</td><td>학교 태블릿, 가로 화면</td></tr>
+      <tr><td>설치</td><td>프로그램을 설치할 수 있나?</td><td>설치 불가, 인터넷 주소로 연다</td></tr>
+      <tr><td>인터넷</td><td>항상 연결되어 있나?</td><td>교실 와이파이를 쓴다</td></tr>
+      <tr><td>저장</td><td>기록을 남겨야 하나?</td><td>남기지 않는다</td></tr>
+      <tr><td>개인정보</td><td>학생 이름·사진이 들어가나?</td><td>넣지 않는다</td></tr>
+    </table>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 09 조건과 만드는 방식 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">01 작은 불편에서 시작한다</div><h2 class="t">조건이 바뀌면 만드는 방식이 바뀐다</h2></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card blue"><span class="chip good">쉬움</span><h3>학생이 태블릿으로<br>바로 연다</h3><p>설치 없이 주소로 여는 웹 페이지(웹앱)</p></div>
+      <div class="card"><span class="chip amber">중간</span><h3>학교 PC의<br>전원을 다룬다</h3><p>예약 종료처럼 컴퓨터 기능을 쓰면 설치형 프로그램</p></div>
+      <div class="card"><span class="chip bad">어려움</span><h3>여러 교사가<br>기록을 함께 본다</h3><p>저장소와 로그인이 필요하고 개인정보 검토가 따라온다</p></div>
+    </div>
+    <div class="take">첫 도구는 저장과 로그인이 필요 없는 웹 페이지로 시작한다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 10 구분 02 -->
+<section class="slide sec">
+  <div class="num">02</div>
+  <h2>AI와 말이 통하는 최소 지식</h2>
+  <p>외울 필요는 없다. AI가 묻는 말을 알아들으면 충분하다</p>
+  <footer class="ft"><span></span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 11 웹앱과 설치형 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">웹앱과 설치형 프로그램</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card blue"><span class="chip">웹앱</span>
+        <ul class="bl">
+          <li>인터넷 주소로 연다</li>
+          <li>설치가 필요 없다</li>
+          <li>태블릿·PC·휴대폰 어디서나 열린다</li>
+          <li>고치면 모두에게 바로 반영된다</li>
+        </ul>
+      </div>
+      <div class="card"><span class="chip gray">설치형 프로그램</span>
+        <ul class="bl">
+          <li>컴퓨터에 설치해서 쓴다</li>
+          <li>인터넷 없이도 쓸 수 있다</li>
+          <li>전원·파일 같은 컴퓨터 기능을 쓴다</li>
+          <li>기기마다 설치하고 업데이트한다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">학생용 연습 자료는 대부분 웹앱이면 충분하다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 12 프런트엔드·백엔드·데이터베이스 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">보이는 화면, 보이지 않는 처리, 남는 기록</h2><p class="lead">식당에 비유하면 쉽다</p></header>
+  <div class="bd">
+    <div class="grid g3">
+      <div class="card blue"><span class="chip">프런트엔드 = 홀</span><p>사용자가 보고 누르는 화면<br>(버튼·글자·그림)</p></div>
+      <div class="card"><span class="chip gray">백엔드 = 주방</span><p>보이지 않는 곳에서 계산하고 요청을 처리하는 부분</p></div>
+      <div class="card"><span class="chip gray">데이터베이스 = 창고</span><p>기록을 오래 보관하고 여러 기기에서 함께 본다</p></div>
+    </div>
+    <div class="take">첫 자료는 화면만 있어도 된다. 기록이 필요하면 그 기기에만 남기는 '브라우저 저장'부터</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 13 API와 MCP -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">API와 MCP: 다른 프로그램과 연결하는 약속</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">API</span>
+        <ul class="bl">
+          <li>프로그램끼리 정보를 주고받는 창구</li>
+          <li>예: 날씨 앱이 기상 정보를 받아 온다</li>
+          <li>정해진 양식으로 묻고 답을 받는다</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">MCP</span>
+        <ul class="bl">
+          <li>AI가 외부 도구를 쓰게 하는 표준 연결</li>
+          <li>예: AI가 GitHub·Figma·브라우저를 직접 연다</li>
+          <li>'AI용 USB-C 포트'에 비유된다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">연결이 늘수록 AI가 할 수 있는 일도, 조심해야 할 권한도 늘어난다</div>
+  </div>
+  <footer class="ft"><span>출처: Model Context Protocol, Introduction (modelcontextprotocol.io)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 14 GitHub와 배포 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">GitHub와 배포</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">GitHub</span>
+        <ul class="bl">
+          <li>파일과 변경 기록을 보관하는 온라인 저장소</li>
+          <li>언제 무엇을 바꿨는지 남는다</li>
+          <li>잘못 바꾸면 이전 버전으로 되돌린다</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">배포</span>
+        <ul class="bl">
+          <li>다른 사람이 주소로 접속하게 공개하는 일</li>
+          <li>예: GitHub Pages로 무료 주소 만들기</li>
+          <li>주소를 QR코드로 만들어 태블릿에서 연다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take warn">무료 GitHub Pages는 공개 저장소에서 쓰고, 사이트는 누구나 볼 수 있다. 학생 이름·사진은 넣지 않는다</div>
+  </div>
+  <footer class="ft"><span>출처: GitHub Docs, About GitHub Pages (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 15 AI의 질문에 답하기 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">개발 지식은 AI의 질문에 답할 때 쓴다</h2></header>
+  <div class="bd">
+    <div class="dlg">
+      <div class="pair"><div class="bub ai"><span class="who">AI</span>웹앱과 설치형 중 무엇으로 만들까요?</div><div class="bub me"><span class="who">교사</span><span>태블릿에서 바로 열어야 해요.<br>설치는 못 해요.</span></div></div>
+      <div class="pair"><div class="bub ai"><span class="who">AI</span>기록을 저장해야 하나요?</div><div class="bub me"><span class="who">교사</span>아니요. 새로고침하면 처음부터 시작해도 돼요.</div></div>
+      <div class="pair"><div class="bub ai"><span class="who">AI</span>로그인이 필요한가요?</div><div class="bub me"><span class="who">교사</span>필요 없어요. 학생 이름도 넣지 않아요.</div></div>
+      <div class="pair"><div class="bub ai"><span class="who">AI</span>어디에 공개할까요?</div><div class="bub me"><span class="who">교사</span>GitHub Pages로 주소만 만들어 주세요.</div></div>
+    </div>
+    <div class="take">용어를 정확히 몰라도, 우리 교실의 조건을 알면 답할 수 있다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 16 비교 요청 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">02 AI와 말이 통하는 최소 지식</div><h2 class="t">무엇으로 만들지 모르면 조건을 주고 비교를 부탁한다</h2></header>
+  <div class="bd">
+    <div class="code">아래 조건에 맞는 제작 방법을 2~3가지 비교해 줘.
+- 사용: 학생이 학교 태블릿에서 혼자 사용
+- 설치: 불가, 인터넷 주소로 열어야 함
+- 저장: 필요 없음 / 로그인: 없음
+비교 기준: 만드는 난이도, 비용, 고치기 쉬움, 개인정보 위험
+마지막에 처음 만드는 교사에게 맞는 방법 하나를 추천해 줘.</div>
+    <div class="take">기술은 외워서 고르는 것이 아니라, 조건을 주고 판단 근거를 받아 고른다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 17 구분 03 -->
+<section class="slide sec">
+  <div class="num">03</div>
+  <h2>질문 한 번에서 작업환경으로</h2>
+  <p>AI가 우리 기준을 잊지 않게 하는 방법</p>
+  <footer class="ft"><span></span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 18 긴 작업의 문제 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">대화가 길어지면 AI는 기준을 놓친다</h2><p class="lead">며칠에 걸쳐 만들 때 자주 겪는 일</p></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w55">
+        <ul class="bl">
+          <li>어제 설명한 학생 특성을 오늘 다시 설명한다</li>
+          <li>'버튼은 크게'라고 했는데 새 화면에서 또 작아진다</li>
+          <li>'완료했습니다'라고 했는데 눌러 보면 안 된다</li>
+          <li>한 곳을 고치면 다른 곳이 망가진다</li>
+        </ul>
+      </div>
+      <div class="fill">
+        <div class="card amber"><span class="chip amber">왜 그럴까?</span>
+          <ul class="bl">
+            <li>AI는 지금 대화에 보이는 내용만 참고한다</li>
+            <li>대화가 길어지면 앞 내용이 흐려진다</li>
+            <li>새 대화를 열면 처음부터 시작한다</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 19 질문 중심 vs 작업환경 중심 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">좋은 질문 한 번보다 좋은 작업환경이 오래 간다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">질문 중심</span>
+        <ul class="bl">
+          <li>매번 처음부터 다시 설명한다</li>
+          <li>결과가 날마다 달라진다</li>
+          <li>기준이 내 머릿속에만 있다</li>
+        </ul>
+      </div>
+      <div class="card blue"><span class="chip">작업환경 중심</span>
+        <ul class="bl">
+          <li>규칙과 자료를 파일로 남긴다</li>
+          <li>AI가 일하기 전에 파일부터 읽는다</li>
+          <li>기준이 폴더에 남아 누구나 이어 간다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">설명은 한 번 파일로 쓰고, 계속 다시 쓴다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 20 하네스 정의 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">하네스: AI가 믿을 만하게 일하도록 갖춘 환경</h2></header>
+  <div class="bd">
+    <div class="quote">"사람은 방향을 잡고, 에이전트는 실행한다."<small>OpenAI 팀이 코드를 직접 쓰지 않고 AI 에이전트로 제품을 만든 뒤 정리한 말</small></div>
+    <div class="grid g3">
+      <div class="card blue"><h3>환경을 갖춘다</h3><p>규칙·자료·도구를 미리 준비한다</p></div>
+      <div class="card blue"><h3>의도를 적는다</h3><p>무엇을 왜 만드는지 분명히 쓴다</p></div>
+      <div class="card blue"><h3>확인 구조를 만든다</h3><p>만들고, 확인하고, 고치는 반복</p></div>
+    </div>
+    <p class="cap">하네스(harness)는 말의 힘을 원하는 방향으로 쓰게 하는 마구(馬具)에서 온 말이다</p>
+  </div>
+  <footer class="ft"><span>출처: OpenAI, Harness engineering: leveraging Codex in an agent-first world (2026. 2.)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 21 더 잘해 대신 빠진 것 채우기 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">결과가 나쁠 때 '더 잘해'라고 하지 않는다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card bad"><span class="chip bad">피할 방법</span>
+        <ul class="bl">
+          <li>버튼이 또 작게 나왔다</li>
+          <li>"버튼 크게 해 줘"라고 다시 말한다</li>
+          <li>다음 화면에서 또 작아진다</li>
+        </ul>
+      </div>
+      <div class="card good"><span class="chip good">권하는 방법</span>
+        <ul class="bl">
+          <li>무엇이 빠져 있었는지 묻는다</li>
+          <li>기준 파일에 "버튼 높이 64px 이상" 한 줄을 적는다</li>
+          <li>이후 모든 화면이 그 기준을 따른다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">실패하면 '무엇이 빠져 있었나?'를 묻고, 그 답을 파일에 남긴다</div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI, Harness engineering (2026. 2.)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 22 ECC 사례 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">해커톤 우승자가 공개한 것은 '작업환경'이었다</h2><p class="lead">공개 사례: Everything Claude Code(ECC)</p></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w55">
+        <ul class="bl">
+          <li>2025년 Anthropic x Forum Ventures<br>해커톤(뉴욕) 우승자가 만들었다</li>
+          <li>Claude Code로 서비스를 만들며 쓰던 설정을<br>2026년 1월 GitHub에 공개했다</li>
+          <li>규칙·스킬·자동 점검·도구 연결을<br>한데 묶었다</li>
+          <li>지금은 Codex·Cursor 등<br>여러 도구용으로도 정리되어 있다</li>
+        </ul>
+      </div>
+      <div class="fill stack">
+        <div class="card blue"><span class="chip">관심</span><p>GitHub 별표 26만 개 이상 (2026. 9. 기준)</p></div>
+        <div class="card amber"><span class="chip amber">주의</span><p>공식 표준이 아니라 개인이 공개한 사례다. 통째로 설치하기보다 구조를 참고한다</p></div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>출처: github.com/affaan-m/ECC 저장소, 작성자 소개 페이지 (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 23 해커톤 수상자 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">문제를 가장 잘 아는 사람이 도구를 만든다</h2><p class="lead">Anthropic 'Built with Opus 4.7' 해커톤(2026) 수상자</p></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip">1위</span><h3>의사 출신 개발자</h3><p>수련의가 가상 환자로 진료를 연습하는 도구</p></div>
+      <div class="card"><span class="chip">2위</span><h3>전자제품 수리 기사</h3><p>회로도를 읽고 점검할 곳을 짚어 주는 수리 도우미</p></div>
+      <div class="card"><span class="chip">3위</span><h3>대학 컴퓨터과학 교육자</h3><p>학생이 코드보다 계획을 먼저 쓰게 하는 학습 도구</p></div>
+      <div class="card"><span class="chip">특별상</span><h3>목수의 아들(20세, 코딩 경험 없음)</h3><p>아버지의 30년 경험을 담은 집수리 진단 도구</p></div>
+    </div>
+    <div class="take">코드를 가장 잘 아는 사람보다, 문제를 가장 잘 아는 사람이 만들었다</div>
+  </div>
+  <footer class="ft"><span>출처: Claude 블로그, Meet the winners of the Built with Opus 4.7 Claude Code hackathon (2026. 6.)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 24 현장 지식 파일 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">03 질문 한 번에서 작업환경으로</div><h2 class="t">현장 지식을 파일로 정리하자 AI의 판단이 좋아졌다</h2><p class="lead">특별상 수상작: 목수 아버지를 인터뷰해 만든 파일 하나</p></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w50">
+        <div class="big"><span class="v">74%</span><span class="arrow">→</span><span class="v hi">81%</span></div>
+        <p class="cap">숙련 목수의 판단과 일치한 비율</p>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>진단 규칙 17개, 현장 용어 16개</li>
+          <li>기준 가격 19개, 흔한 실수 9개</li>
+          <li>기본 지시문은 그대로 두고<br>파일만 더했다</li>
+        </ul>
+      </div>
+    </div>
+    <div class="take">교사가 가진 학생 이해도 이런 파일이 될 수 있다</div>
+  </div>
+  <footer class="ft"><span>출처: Claude 블로그, Built with Opus 4.7 수상자 소개 (2026. 6.)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 25 구분 04 -->
+<section class="slide sec">
+  <div class="num">04</div>
+  <h2>작업환경을 이루는 것들</h2>
+  <p>규칙 · 문서 · 스킬 · 에이전트 · 도구 · 확인</p>
+  <footer class="ft"><span></span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 26 학교 비유 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">작업환경은 학교 업무 체계와 닮았다</h2></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:24%">구성</th><th style="width:32%">학교에 비유하면</th><th>실제 모습</th></tr>
+      <tr><td>규칙</td><td>학교 규정·학급 규칙</td><td class="mono">AGENTS.md</td></tr>
+      <tr><td>프로젝트 문서</td><td>업무 편람·자료철</td><td class="mono">PROJECT_OVERVIEW.md, DESIGN.md</td></tr>
+      <tr><td>스킬</td><td>업무 매뉴얼</td><td class="mono">SKILL.md</td></tr>
+      <tr><td>에이전트</td><td>업무 담당자</td><td>기획·구현·검토 역할</td></tr>
+      <tr><td>도구 연결</td><td>교무 시스템·장비</td><td>MCP (GitHub·Figma 등)</td></tr>
+      <tr><td>확인과 인계</td><td>결재·인수인계서</td><td>완료 기준, <span class="mono">HANDOFF.md</span></td></tr>
+    </table>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 27 규칙 파일 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">규칙 파일: 매번 말하지 않아도 지킬 것</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="code"><span class="fname">카페주문연습/AGENTS.md</span>- 학생 이름·사진 등 개인정보를 넣지 않는다
+- 한 화면에는 행동을 하나만 둔다
+- 버튼 높이 64px 이상, 본문 글자 24px 이상
+- 요청하지 않은 기능을 더하지 않는다
+- 고친 뒤에는 직접 열어 확인하고 결과를 알린다</div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>항상 지킬 원칙만 짧게 쓴다</li>
+          <li>길수록 덜 지킨다.<br>필요 없어진 줄은 지운다</li>
+          <li>같은 부탁을 두 번 했다면<br>한 줄을 더한다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Developers, Rethinking skills and prompts for GPT-6 Astra (2026. 9.) · Claude Code Docs, Memory</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 28 도구별 파일 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">도구 이름은 달라도 같은 파일을 쓸 수 있다</h2><p class="lead">2026년 9월 기준 공식 문서</p></header>
+  <div class="bd">
+    <table class="tb">
+      <tr><th style="width:19%">구분</th><th style="width:22%">Codex</th><th style="width:31%">Claude Code</th><th>Antigravity</th></tr>
+      <tr><td>규칙 파일</td><td class="mono">AGENTS.md</td><td><span class="mono">CLAUDE.md</span><br>(없으면 <span class="mono">AGENTS.md</span>)</td><td><span class="mono">AGENTS.md</span> 또는<br><span class="mono">GEMINI.md</span></td></tr>
+      <tr><td>스킬 폴더</td><td class="mono">.agents/skills</td><td class="mono">.claude/skills</td><td class="mono">.agents/skills</td></tr>
+      <tr><td>스킬 부르기</td><td class="mono">$이름</td><td class="mono">/이름</td><td class="mono">/이름</td></tr>
+    </table>
+    <div class="take">AGENTS.md와 SKILL.md를 기준으로 두면 도구를 바꿔도 이어 쓸 수 있다</div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Codex Docs · Claude Code Docs · Google Antigravity Docs (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 29 프로젝트 문서 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">프로젝트 문서: AI가 알아야 할 배경</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="code"><span class="fname">카페주문연습/PROJECT_OVERVIEW.md</span>대상: 고등부 학생 (학교 태블릿, 혼자 사용)
+목표 행동: 카페에서 음료 1잔 주문하기
+단계: 메뉴 고르기 → 크기 고르기 → 주문 확인
+이번 버전: 3단계 + 처음부터 다시 하기
+하지 않는 것: 결제, 로그인, 기록 저장</div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>규칙은 '지켜라', 문서는 '알아 둬라'</li>
+          <li>'하지 않는 것'을 적으면<br>AI가 일을 키우지 않는다</li>
+          <li>화면 기준은 DESIGN.md에<br>따로 둔다 (2부)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 30 스킬 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">스킬: 자주 하는 일을 매뉴얼로 만든다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w50">
+        <ul class="bl">
+          <li>특정 일을 할 때 따라갈 순서를 적은 파일</li>
+          <li>평소에는 이름과 설명만 보고<br>필요할 때 전체를 읽는다</li>
+          <li>직접 부를 수도, AI가 알아서 고를 수도 있다</li>
+        </ul>
+      </div>
+      <div class="fill">
+        <div class="code"><span class="fname">.agents/skills/screen-check/SKILL.md</span>---
+name: screen-check
+description: 학습자료 화면을 점검할 때 쓴다
+---
+1. 한 화면에 행동이 하나인지 본다
+2. 버튼 높이와 글자 크기를 확인한다
+3. 잘못 눌렀을 때 돌아갈 수 있는지 본다
+4. 문제를 표로 정리해 알린다</div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Codex Docs, Agent Skills · Google Antigravity Docs, Skills (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 31 에이전트 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">에이전트: 일이 커지면 역할을 나눠 맡긴다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>기획</h4><p>무엇을 어디까지 만들지 정리한다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">2</span><h4>화면 설계</h4><p>흐름과 화면 기준을 정한다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>구현</h4><p>코드를 쓰고 실행해 본다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">4</span><h4>검토·확인</h4><p>기준대로 됐는지 점검한다</p></div>
+    </div>
+    <div class="back">문제가 있으면 앞 단계로 되돌려 다시 한다</div>
+    <div class="take">작은 자료는 AI 하나로 충분하다. 검토만 새 대화에 맡겨도 효과가 크다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 32 도구 연결 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">도구 연결: AI가 직접 열어 보고 확인하게 한다</h2><p class="lead">ChatGPT의 '앱', Claude의 '커넥터'도 같은 역할을 한다</p></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><h3>파일·폴더</h3><p>프로젝트 파일을 직접 읽고 고친다</p></div>
+      <div class="card"><h3>GitHub</h3><p>저장하고, 기록을 남기고, 공개한다</p></div>
+      <div class="card"><h3>브라우저</h3><p>만든 화면을 열어 눌러 보고 확인한다</p></div>
+      <div class="card"><h3>Figma</h3><p>디자인을 읽고, 지원 환경에서는 직접 그린다</p></div>
+    </div>
+    <div class="take warn">연결할수록 권한도 커진다. 필요한 것만 연결하고, 학교 계정은 신중히 다룬다</div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Help, Apps in ChatGPT · Claude Help, Connectors · Figma Docs, MCP server (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 33 확인 반복 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">완료 기준을 먼저 주면 AI가 스스로 확인하고 고친다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step blue"><span class="n">1</span><h4>만들기</h4><p>요청한 부분만 만든다</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">2</span><h4>실행하기</h4><p>직접 열고 눌러 본다</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">3</span><h4>기준과 비교</h4><p>완료 기준을 통과했나?</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">4</span><h4>고치기</h4><p>틀린 곳만 고치고 다시 확인</p></div>
+    </div>
+    <div class="back">같은 실패가 세 번 반복되면 멈추고 사람에게 묻는다</div>
+    <div class="take">'완료했습니다' 대신 '무엇으로 확인했는지'를 받는다</div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Developers, Rethinking skills and prompts for GPT-6 Astra (2026. 9.)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 34 최소 구성 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">04 작업환경을 이루는 것들</div><h2 class="t">처음에는 이만큼만 갖추면 된다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="tree" style="--c:330px">
+          <div class="r"><span class="nm">카페주문연습/</span><span class="d">프로젝트 폴더 하나</span></div>
+          <div class="r"><span class="nm i1">AGENTS.md</span><span class="d">항상 지킬 규칙</span></div>
+          <div class="r"><span class="nm i1">PROJECT_OVERVIEW.md</span><span class="d">무엇을·왜·어디까지</span></div>
+          <div class="r"><span class="nm i1">DESIGN.md</span><span class="d">화면 기준 (2부)</span></div>
+          <div class="r"><span class="nm i1">HANDOFF.md</span><span class="d">지금 상태와 다음 할 일</span></div>
+          <div class="r"><span class="nm i1">.agents/skills/</span><span class="d">자주 하는 일 (필요할 때)</span></div>
+        </div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>ECC처럼 수백 개를 설치하지 않는다</li>
+          <li>같은 문제가 두 번 생기면<br>그때 한 줄을 더한다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 35 구분 05 -->
+<section class="slide sec">
+  <div class="num">05</div>
+  <h2>작업공간과 인계</h2>
+  <p>폴더 하나로 시작하고, 긴 작업은 파일로 넘긴다</p>
+  <footer class="ft"><span></span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 36 프로젝트 폴더 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">프로젝트마다 폴더 하나를 만든다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="stack">
+        <span class="chip">내 프로젝트 폴더</span>
+        <div class="tree" style="--c:300px">
+          <div class="r"><span class="nm">문서/AI프로젝트/</span><span class="d">찾기 쉬운 곳</span></div>
+          <div class="r"><span class="nm i1">카페주문연습/</span><span class="d">자료 하나</span></div>
+          <div class="r"><span class="nm i1">버스타기연습/</span><span class="d">자료 하나</span></div>
+        </div>
+      </div>
+      <div class="stack">
+        <span class="chip gray">도구 설정 폴더</span>
+        <div class="tree" style="--c:220px">
+          <div class="r"><span class="nm">.codex/</span><span class="d">Codex 설정</span></div>
+          <div class="r"><span class="nm">.claude/</span><span class="d">Claude Code 설정</span></div>
+          <div class="r"><span class="nm">.gemini/</span><span class="d">Gemini·Antigravity 설정</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="take">AI 도구에서는 '폴더 열기'로 프로젝트 폴더 자체를 연다. 설정 폴더는 직접 만질 일이 적다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 37 공통 규칙과 프로젝트 규칙 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">공통 규칙과 이 프로젝트의 규칙을 나눈다</h2></header>
+  <div class="bd">
+    <div class="grid g2">
+      <div class="card"><span class="chip gray">모든 프로젝트 공통</span>
+        <ul class="bl">
+          <li>"한국어로 답해 줘"</li>
+          <li>"바꾸기 전에 계획부터 보여 줘"</li>
+        </ul>
+        <p class="fname">예: ~/.codex/AGENTS.md</p>
+      </div>
+      <div class="card blue"><span class="chip">이 프로젝트만</span>
+        <ul class="bl">
+          <li>대상 학생과 사용 기기</li>
+          <li>화면 기준과 하지 않을 것</li>
+        </ul>
+        <p class="fname">예: 카페주문연습/AGENTS.md</p>
+      </div>
+    </div>
+    <div class="take">학교 규칙 → 학급 규칙처럼, 작업 폴더에 가까운 규칙이 더 구체적이다</div>
+  </div>
+  <footer class="ft"><span>출처: OpenAI Codex Docs, Custom instructions with AGENTS.md (2026. 9. 확인)</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 38 인계 흐름 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">대화가 길어지면 인계 파일을 쓰고 새 대화로 넘긴다</h2></header>
+  <div class="bd">
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h4>대화 1</h4><p>기능 하나를 끝까지 완성한다</p></div><i class="ar"></i>
+      <div class="step blue"><span class="n">2</span><h4>HANDOFF.md</h4><p>지금 상태와 다음 할 일을 정리한다</p></div><i class="ar"></i>
+      <div class="step"><span class="n">3</span><h4>대화 2</h4><p>HANDOFF.md를 읽고<br>이어서 한다</p></div>
+    </div>
+    <div class="grid g4">
+      <div class="card line"><h3>지금 상태</h3></div>
+      <div class="card line"><h3>정한 것과 이유</h3></div>
+      <div class="card line"><h3>안 된 방법</h3></div>
+      <div class="card line"><h3>다음 할 일</h3></div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 39 인계 파일 예시 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">인계 파일은 이렇게 짧아도 충분하다</h2></header>
+  <div class="bd">
+    <div class="row">
+      <div class="w60">
+        <div class="code"><span class="fname">카페주문연습/HANDOFF.md</span><span class="k">지금 상태</span>
+- 1단계 메뉴 고르기, 2단계 크기 고르기 완성
+<span class="k">정한 것</span>
+- 선택지는 2개로 시작 (학생 반응을 보고 늘린다)
+<span class="k">안 된 방법</span>
+- 효과음 자동 재생: 태블릿에서 막힘 → 버튼을 눌러 재생
+<span class="k">다음 할 일</span>
+- 3단계 주문 확인 화면, '처음부터' 버튼</div>
+      </div>
+      <div class="fill">
+        <ul class="bl">
+          <li>'안 된 방법'을 적어야<br>같은 실패를 되풀이하지 않는다</li>
+          <li>기능 하나가 끝날 때마다<br>AI에게 갱신을 맡긴다</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 40 이 강의자료도 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">이 강의자료도 같은 방식으로 만들었다</h2><p class="lead">GitHub의 OSUNGSCHOOL 저장소</p></header>
+  <div class="bd">
+    <div class="tree" style="--c:420px">
+      <div class="r"><span class="nm">AGENTS.md</span><span class="d">작업 순서와 우선순위</span></div>
+      <div class="r"><span class="nm">DESIGN.md</span><span class="d">슬라이드 화면 기준</span></div>
+      <div class="r"><span class="nm">CONTENT_STYLE_GUIDE.md</span><span class="d">문구·용어 기준</span></div>
+      <div class="r"><span class="nm">SPEAKER_SCRIPT_GUIDE.md</span><span class="d">발표 대본 기준</span></div>
+      <div class="r"><span class="nm">docs/</span><span class="d">개요·대본·출처·검수 기록</span></div>
+      <div class="r"><span class="nm">slides/</span><span class="d">슬라이드 원본과 PDF</span></div>
+    </div>
+    <div class="take">같은 문제가 반복되면 결과물만 고치지 않고 지침 파일을 고친다</div>
+  </div>
+  <footer class="ft"><span>github.com/LUCKYBRIDGE/OSUNGSCHOOL</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 41 첫 요청문 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">처음 요청할 때 쓰는 문장</h2></header>
+  <div class="bd">
+    <div class="code">나는 특수학교 교사다. 아래 문제를 해결할 작은 웹 자료를 만들고 싶다.
+- 문제: <span class="c">(누가 / 어떤 상황에서 / 무엇을 어려워해서 / 무엇을 돕는지)</span>
+- 사용 조건: <span class="c">(사용하는 사람 / 기기 / 설치 가능 여부 / 저장 필요 여부)</span>
+- 이번 버전 범위: <span class="c">(3~5단계)</span>
+바로 만들지 말고 먼저
+1) 내가 빠뜨린 조건을 질문하고
+2) PROJECT_OVERVIEW.md와 AGENTS.md 초안을 만들어 줘.</div>
+    <div class="take">바로 만들게 하지 않고, 먼저 질문하고 문서부터 쓰게 한다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 42 이어서 요청문 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">이어서 작업할 때 쓰는 문장</h2></header>
+  <div class="bd">
+    <div class="code">AGENTS.md와 HANDOFF.md를 먼저 읽고, '다음 할 일' 중 첫 번째만 진행해 줘.
+완료 기준: <span class="c">(예: 3단계에서 '처음부터'를 누르면 1단계로 돌아간다)</span>
+직접 실행해서 확인하고, 확인한 방법과 결과를 알려 줘.
+마지막에 HANDOFF.md를 갱신해 줘.</div>
+    <div class="take">한 번에 하나, 완료 기준, 확인 결과, 인계 갱신</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 43 1부 정리 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">1부 정리</div><h2 class="t">1부에서 가져갈 세 가지</h2></header>
+  <div class="bd">
+    <div class="sum">
+      <div class="p"><b>1</b><div><h4>만들 것은 앱이 아니라 해결할 문제다</h4><p>문제 한 문장과 사용 조건부터 정한다</p></div></div>
+      <div class="p"><b>2</b><div><h4>설명은 대화가 아니라 파일에 남긴다</h4><p>규칙·문서·스킬·인계 파일이 AI의 기억이 된다</p></div></div>
+      <div class="p"><b>3</b><div><h4>완료는 확인한 결과로 판단한다</h4><p>완료 기준을 먼저 주고, 확인한 방법을 받는다</p></div></div>
+    </div>
+    <div class="take">2부: 학생이 헤매지 않는 화면을 설계하고 직접 만들어 본다</div>
+  </div>
+  <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- 44 참고 자료 -->
+<section class="slide">
+  <header class="hd"><div class="kicker">1부 참고 자료</div><h2 class="t">참고 자료 (2026년 9월 확인)</h2></header>
+  <div class="bd">
+    <ul class="refs">
+      <li>OpenAI, Harness engineering: leveraging Codex in an agent-first world (2026. 2.)<span>openai.com/index/harness-engineering</span></li>
+      <li>OpenAI Developers, Rethinking skills and prompts for GPT-6 Astra (2026. 9. 11.)<span>developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra</span></li>
+      <li>OpenAI Codex Docs, Custom instructions with AGENTS.md · Agent Skills<span>developers.openai.com/codex/guides/agents-md · developers.openai.com/codex/skills</span></li>
+      <li>Claude Code Docs, How Claude remembers your project (CLAUDE.md·AGENTS.md)<span>code.claude.com/docs/en/memory</span></li>
+      <li>Google Antigravity Docs, Rules · Skills<span>antigravity.google/docs/rules · antigravity.google/docs/skills</span></li>
+      <li>Model Context Protocol, Introduction<span>modelcontextprotocol.io/docs/getting-started/intro</span></li>
+      <li>Claude 블로그, Meet the winners of the Built with Opus 4.7 Claude Code hackathon (2026. 6.)<span>claude.com/blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon</span></li>
+      <li>Everything Claude Code(ECC) 저장소 · GitHub Docs, About GitHub Pages<span>github.com/affaan-m/ECC · docs.github.com/pages</span></li>
+    </ul>
+  </div>
+  <footer class="ft"><span>도구 기능과 요금제는 바뀔 수 있으므로 사용 전에 다시 확인한다</span><span class="pg">1부 · </span></footer>
+</section>
+
+<!-- /slides -->
+<pre id="qa"></pre>
+<script src="qa.js"></script>
+</body>
+</html>
