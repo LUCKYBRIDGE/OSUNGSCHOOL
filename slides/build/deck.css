@@ -196,3 +196,7 @@ table.tb { width: 100%; border-collapse: collapse; }
 /* 실제 화면 캡처 */
 .shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 10px; border: 2px solid #D5DCE5; background: #F3F5F8; }
 .exp .card { padding: 14px 16px 18px; }
+
+/* 두 칸 배치 안의 큰 숫자 */
+.big.sm .v { font-size: 84px; }
+.big.sm .arrow { font-size: 46px; }
