@@ -5,8 +5,8 @@ set -e
 cd "$(dirname "$0")"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 typeset -A OUT
-OUT[part1]="osung_ai_digital_problem_solving_part1_workspace_v21_20260930.pdf"
-OUT[part2]="osung_ai_digital_problem_solving_part2_ux_implementation_v21_20260930.pdf"
+OUT[part1]="osung_ai_digital_problem_solving_part1_workspace_v22_20260930.pdf"
+OUT[part2]="osung_ai_digital_problem_solving_part2_ux_implementation_v22_20260930.pdf"
 PART="$1"
 PDF="../pdf/${OUT[$PART]}"
 mkdir -p ../pdf renders

@@ -47,3 +47,16 @@
 - ECC 해커톤 시점: '2026년 2월경' → 2025년 해커톤, 2026년 1월 저장소 공개
 - Claude Design: '베타' → 유료 플랜 연구 프리뷰(2026. 4. 출시)
 - 기존 [9] `developers.openai.com/api/docs/guides/latest-model`은 모델 안내 문서이며 AGENTS.md 적재 방식 근거가 아니므로 Codex AGENTS.md 문서로 교체
+
+## v22 추가 출처 (2026-09-30 확인)
+
+18. OpenAI Help, *Projects in ChatGPT* — https://help.openai.com/en/articles/10169521
+   - 프로젝트는 무료·유료 모든 요금제에서 쓸 수 있고, 프로젝트 설정에서 지침을 넣는다. (2부 실습 도구)
+19. OpenAI Help, *Working with writing blocks and code blocks in ChatGPT* — https://help.openai.com/en/articles/20001246
+   - 코드 블록에서 Preview를 누르면 HTML 페이지 등을 ChatGPT 안에서 미리 본다. 쓸 수 있는 기능은 요금제·기기·설정에 따라 다르다. (2부 실습 도구)
+20. Gemini Apps Help, *Create docs, apps & more with Canvas* · *Use Gems in Gemini Apps* — https://support.google.com/gemini/answer/16047321 · https://support.google.com/gemini/answer/15146780
+   - Canvas에서 만든 앱을 Preview로 본다. Gem은 지침과 Knowledge 파일을 가진다. 개인 계정 Gem은 2026년 11월부터 스킬로 자동 전환된다. Gem 사용은 13세 이상. (2부 실습 도구, 1부 스킬 정리)
+21. Claude Help, *What are artifacts and how do I use them?* · *What are projects?* — https://support.claude.com/en/articles/17153992 · https://support.claude.com/en/articles/9517075
+   - 아티팩트(한 쪽짜리 웹사이트·작은 도구 등)는 무료 요금제에서도 대화 안에서 만든다. 프로젝트는 지침과 지식 파일을 가진다. (2부 실습 도구)
+22. 워크플로·커맨드에서 스킬로의 변화 — https://developers.openai.com/codex/custom-prompts · https://code.claude.com/docs/en/skills · https://antigravity.google/docs/skills · https://www.anthropic.com/engineering/building-effective-agents
+   - Codex 커스텀 프롬프트는 사용 중단 예정(deprecated), 스킬 사용 권장. Claude Code의 `.claude/commands/`는 예전 형식이지만 동작한다. Antigravity 문서는 스킬을 `/이름`으로 부르도록 안내한다. Anthropic은 정해진 코드 경로로 움직이는 시스템을 workflow, 스스로 과정을 정하는 시스템을 agent로 구분한다. (1부 스킬 정리)
