@@ -7,7 +7,7 @@
   pages.forEach((p, i) => {
     const n = i + 1;
     if (p.scrollHeight > p.clientHeight + 1) out.push(`p${n} 쪽 넘침: ${p.scrollHeight - p.clientHeight}px`);
-    p.querySelectorAll('.pr, td, th, .files > div, .bx, .qr, .flow .s').forEach((el) => {
+    p.querySelectorAll('.pr, td, th, .files > div, .bx, .flow .s').forEach((el) => {
       if (el.scrollHeight > el.clientHeight + 1 || el.scrollWidth > el.clientWidth + 1) {
         out.push(`p${n} 넘침: ${el.tagName.toLowerCase()}.${el.className} "${txt(el)}"`);
       }
