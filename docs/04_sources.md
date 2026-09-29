@@ -65,3 +65,9 @@
    - 특수학교 학생용 카페 주문 연습 사이트(순수 HTML/CSS/JavaScript)를 같은 목표로 네 조건에서 제작. A·B·C는 같은 단계별 요청문(버전 1→2→3), 서로 다른 ChatGPT 프로젝트와 프로젝트 전용 메모리. B·C의 DESIGN.md는 동일(blob `c91e3a4`). C는 고정한 Figma 설계 + Figma MCP. D는 Figma 적극 활용, 버전 2 작업 중(2026-09-30 확인). (2부 사례)
 24. Claude Code Docs, *Automate workflows with hooks* — https://code.claude.com/docs/en/hooks-guide
    - 훅은 Claude Code가 정해진 시점(예: 파일을 고친 뒤, 명령 실행 전)에 실행하는 사용자 정의 명령이다. 모델이 실행 여부를 고르지 않고 반드시 실행되는 결정적(deterministic) 제어를 준다. 판단이 필요한 경우를 위한 prompt·agent 방식 훅도 있다. 프로젝트 훅은 `.claude/settings.json`에 둔다. (1부 규칙·스킬·훅 비교)
+25. OpenAI Help, *Is ChatGPT safe for all ages?* · OpenAI *Terms of Use* — https://help.openai.com/en/articles/8313401 · https://openai.com/policies/terms-of-use/
+   - ChatGPT는 13세 미만을 위한 서비스가 아니고, 13~18세는 보호자 동의가 필요하다. (2부 27쪽, 대본 예상 질문 Q6)
+26. Claude Help, *Minimum age requirement access restriction* · *Age assurance on Claude* — https://support.claude.com/en/articles/13117299 · https://support.claude.com/en/articles/15171100
+   - Claude 계정은 18세 이상만 만들고 쓸 수 있다. (2부 27쪽, Q6)
+27. Anthropic, *Updates to Consumer Terms and Privacy Policy* — https://www.anthropic.com/news/updates-to-our-consumer-terms
+   - 사용자가 자기 데이터를 Claude 개선에 쓸지 선택할 수 있다. 서비스마다 대화 기록·학습 사용 설정이 다르므로 각 서비스 설정에서 확인한다. (2부 27쪽, Q5)
