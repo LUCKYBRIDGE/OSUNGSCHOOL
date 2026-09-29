@@ -21,9 +21,11 @@
       range.selectNodeContents(t);
       const rr = range.getBoundingClientRect();
       if (rr.width === 0) continue;
-      if (!el.closest('.ft, .mock, .refs')) {
+      // 최소 크기(DESIGN.md): 본문 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 속 글자는 제외
+      if (!el.closest('.mock')) {
         const fs = parseFloat(getComputedStyle(el).fontSize);
-        if (fs < 20) out.push(`p${n} 작은 글자 ${fs}px: "${t.textContent.trim().slice(0, 24)}"`);
+        const min = el.closest('.ft') ? 14 : el.closest('.refs') ? 17 : 20;
+        if (fs < min) out.push(`p${n} 작은 글자 ${fs}px (기준 ${min}px): "${t.textContent.trim().slice(0, 24)}"`);
       }
       if (rr.left < sr.left + 40 || rr.right > sr.right - 40 || rr.top < sr.top + 16 || rr.bottom > sr.bottom - 12) {
         out.push(`p${n} 안전영역 이탈: "${t.textContent.trim().slice(0, 24)}"`);

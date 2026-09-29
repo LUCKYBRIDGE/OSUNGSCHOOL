@@ -158,7 +158,7 @@ table.tb { width: 100%; border-collapse: collapse; }
 /* 참고 자료 (읽기용 목록, 최소 17px 허용) */
 .refs { list-style: none; display: flex; flex-direction: column; gap: 9px; }
 .refs li { font-size: 19px; line-height: 1.35; color: #2B3644; }
-.refs li span { display: block; font-family: Menlo, monospace; font-size: 16px; color: #6B7785; }
+.refs li span { display: block; font-family: Menlo, monospace; font-size: 17px; color: #6B7785; }
 
 /* 화면 예시(목업): 예시 속 작은 글자는 크기 검사에서 제외 */
 .mock { position: relative; background: #fff; border: 10px solid #2B3644; border-radius: 26px; overflow: hidden; }

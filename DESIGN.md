@@ -17,6 +17,7 @@ colors:
   good-tint: "#EAF6EE"
   bad: "#B42318"
   bad-tint: "#FDEEEC"
+  amber: "#B45309"
   border: "#D5DCE5"
 typography:
   cover-title:
@@ -51,6 +52,21 @@ typography:
   code:
     fontFamily: Menlo
     fontSize: 21px
+  prompt:
+    fontFamily: Apple SD Gothic Neo
+    fontSize: 23px
+  table-body:
+    fontFamily: Apple SD Gothic Neo
+    fontSize: 23px
+  small-body:
+    fontFamily: Apple SD Gothic Neo
+    fontSize: 22px
+  refs:
+    fontFamily: Apple SD Gothic Neo
+    fontSize: 19px
+  refs-url:
+    fontFamily: Menlo
+    fontSize: 17px
   footer:
     fontFamily: Apple SD Gothic Neo
     fontSize: 14px
@@ -93,6 +109,9 @@ components:
   chip-muted:
     backgroundColor: "{colors.muted}"
     textColor: "{colors.background}"
+  chip-amber:
+    backgroundColor: "{colors.amber}"
+    textColor: "{colors.background}"
   takeaway:
     backgroundColor: "{colors.navy}"
     textColor: "{colors.background}"
@@ -101,6 +120,10 @@ components:
     backgroundColor: "{colors.warn-tint}"
     textColor: "{colors.warn-text}"
   code-block:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    typography: "{typography.prompt}"
+  code-block-mono:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.ink}"
     typography: "{typography.code}"
@@ -127,13 +150,14 @@ components:
 - **accent (#F2A33A):** 남색 배경 위의 구분 번호와 표지 부제에만 쓴다.
 - **good / bad:** '좋은 예·피할 예' 비교에만 쓴다. 색만으로 뜻을 전하지 않도록 칩에 항상 글자('좋은 예', '피할 예')를 함께 쓴다.
 - **warn-tint + warn-text:** 개인정보, 요금제, 권한처럼 주의가 필요한 한 줄에만 쓴다.
+- **amber (#B45309):** '진행 중', '특별상'처럼 따로 표시할 칩에만 쓴다. 흰 글자와의 대비는 5.0:1이다.
 - 배경은 흰색을 기본으로 한다. 어두운 배경은 표지와 구분 슬라이드에만 쓴다.
 
 ## Typography
 
-- 한글 기본 글꼴은 Apple SD Gothic Neo(제작 환경 macOS), 대체 글꼴은 맑은 고딕 → Noto Sans KR이다. 경로·파일명·요청문 예시는 Menlo를 쓴다.
-- 캔버스 1280×720px 기준 최소 크기: 본문·카드 설명 **24px 이상**, 라벨·칩·캡션 **20px 이상**, 바닥글(출처·쪽 번호) 14px.
-- 참고 자료 목록 슬라이드는 읽기용이므로 17px 이상을 허용한다.
+- 한글 기본 글꼴은 Apple SD Gothic Neo(제작 환경 macOS), 대체 글꼴은 맑은 고딕 → Noto Sans KR이다. 경로·파일명과 DESIGN.md 같은 형식 예시(`code mono`)는 Menlo를 쓴다. 요청문과 파일 내용 예시(`code`)는 읽기 쉽게 본문 글꼴을 쓴다.
+- 캔버스 1280×720px 기준 크기: 본문·카드 설명 **24px 이상**. 칸이 좁은 요소는 표 칸·코드 상자·되돌림 띠·정리 설명 23px, 표 머리·단계 설명·폴더 목록·캡션 22px까지 쓴다. 라벨·칩 **20px 이상**, 바닥글(출처·쪽 번호) 14px.
+- 참고 자료 목록 슬라이드는 읽기용이므로 제목 19px, 주소 17px(Menlo)까지 허용한다.
 - 목업(화면 예시) 안의 작은 글자는 '복잡함'을 보여주기 위한 그림이므로 크기 기준에서 제외한다.
 - 한국어는 어절 단위로 줄을 바꾼다(`word-break: keep-all`). 어색한 줄바꿈은 글자를 줄이지 말고 문구를 줄이거나 `<br>`로 의미 단위에서 끊는다.
 - 파일명·영어 단어가 중간에서 끊기면(예: `PROJECT_OVER / VIEW`) 실패로 본다. 한국어 표현으로 바꾸거나 칸을 넓힌다.
@@ -164,12 +188,12 @@ components:
 
 ## Components
 
-- **구역 라벨(kicker):** 제목 위 20px, primary. 지금 몇 번째 묶음인지 알려 준다.
+- **구역 라벨(kicker):** 제목 위 20px, primary. 지금 몇 번째 묶음인지 알려 준다. 사례 장처럼 성격을 덧붙일 때도 묶음 번호와 이름을 먼저 쓴다(예: '04 그림으로 먼저 확인하기 · 사례').
 - **카드:** 제목 1줄 + 설명 1~2줄. 한 카드에 설명이 3줄을 넘으면 문구를 줄이거나 카드 수를 줄인다.
-- **칩:** '예전/지금', '좋은 예/피할 예', 단계 이름처럼 카드의 성격을 한두 단어로 표시한다.
+- **칩:** '예전/지금', '좋은 예/피할 예', 단계 이름처럼 카드의 성격을 한두 단어로 표시한다. 필요하면 '이름 · 짧은 설명'으로 쓰되 한 줄, 공백 포함 20자 이내로 쓴다. 더 긴 설명은 카드 제목이나 본문으로 옮긴다.
 - **핵심 한 줄(take):** 슬라이드 맨 아래 한 줄로 결론을 준다. 주의 문장은 `take warn`을 쓴다.
 - **되돌림 띠(back):** 단계 흐름에서 '틀리면 되돌아간다' 같은 반복 조건을 점선 띠로 보여 준다.
-- **코드 상자:** 파일 예시와 복사해서 쓰는 요청문. 맨 위에 파일 경로를 적는다. 괄호 속 회색 글자는 채워 넣을 자리다.
+- **코드 상자:** 복사해서 쓰는 요청문과 파일 내용 예시(`code`, 본문 글꼴 23px). 파일 예시는 맨 위에 파일 경로(Menlo)를 적는다. 괄호 속 회색 글자는 채워 넣을 자리다. 형식 자체를 보여 줄 때만 `code mono`(Menlo 21px)를 쓴다.
 - **구분 슬라이드:** 남색 배경, 주황 번호, 제목, 한 줄 설명.
 - **화면 캡처(shot):** 실제 사이트의 전체 모습을 비교할 때 쓴다. 16:10으로 위쪽을 기준으로 자르고 테두리 2px를 둔다. 캡처 속 글자는 크기 기준에서 제외한다. knollab-001 캡처는 `slides/build/capture.sh`로 다시 만든다.
 - **큰 숫자(big):** 결과 수치 비교(예: 74% → 81%)에 쓴다. 기본 110px, 두 칸 배치 안에서는 84px(`big sm`).
@@ -188,7 +212,7 @@ components:
 
 1. `slides/build/part1.html`, `part2.html`을 고친다(공통 스타일은 `deck.css`).
 2. `slides/build/build.sh part1`(또는 `part2`)로 PDF를 만든다. Chrome headless가 `slides/pdf/`에 PDF를 쓰고, `qa.js` 자동 검사 결과를 출력한다.
-3. 자동 검사는 넘침, 본문 영역 밖 글자, 최소 글자 크기 미달, 안전영역 이탈, 상자 겹침을 찾는다. 결과가 `OK`가 아니면 고친 뒤 다시 만든다.
+3. 자동 검사는 넘침, 본문 영역 밖 글자, 최소 글자 크기 미달(본문 20px, 참고 자료 목록 17px, 바닥글 14px, 목업 제외), 안전영역 이탈, 상자 겹침을 찾는다. 결과가 `OK`가 아니면 고친 뒤 다시 만든다.
 4. `python3 contact.py <pdf> <이름>`으로 6장씩 모은 검수 이미지를 만들어 눈으로 확인한다(어색한 줄바꿈, 정보 위계, 목업).
 5. `pdffonts`로 글꼴이 모두 포함(emb yes)됐는지, `pdftotext`로 대체 문자(�)가 없는지 확인한다.
 6. 같은 문제가 두 번 나오면 이 문서 또는 `CONTENT_STYLE_GUIDE.md`에 규칙을 더하고 `docs/GUIDELINE_CHANGELOG.md`에 이유를 적는다.
@@ -199,5 +223,5 @@ components:
 - A4 세로, 여백 위 10mm·좌우 12mm·아래 8mm. 앞뒤 2쪽을 넘기지 않는다.
 - 최소 글자: 본문·설명 9pt, 바닥글 8pt. 제목 17~20pt, 구역 제목 12pt.
 - 흑백으로 인쇄해도 읽히게 만든다. 색 대신 선·굵기·위치로 구분하고, 확인 상자와 쓰는 줄은 선으로 그린다.
-- 슬라이드 쪽 번호로 내용을 가리키지 않는다(쪽 번호는 바뀔 수 있다). 요청문은 슬라이드·`practice/README.md`와 같은 문장을 쓴다.
+- 슬라이드 쪽 번호로 내용을 가리키지 않는다(쪽 번호는 바뀔 수 있다). 요청문은 `practice/README.md`와 같은 문장을 쓰고, 슬라이드와는 같은 요청을 쓴다. 채팅 AI용으로 줄이거나 바꾼 줄이 있으면 대본에 그 이유를 밝힌다.
 - 확인: 자동 검사 결과 `OK`, `pdftoppm -gray`로 만든 흑백 이미지를 눈으로 본다.
