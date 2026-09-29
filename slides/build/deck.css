@@ -192,3 +192,7 @@ table.tb { width: 100%; border-collapse: collapse; }
 
 .card .cap { font-size: 22px; color: #5B6878; }
 .card p.fname, .step p.fname { font-family: Menlo, "Apple SD Gothic Neo", monospace; font-size: 20px; font-weight: 700; color: #1B365D; }
+
+/* 실제 화면 캡처 */
+.shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 10px; border: 2px solid #D5DCE5; background: #F3F5F8; }
+.exp .card { padding: 14px 16px 18px; }

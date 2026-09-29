@@ -60,3 +60,6 @@
    - 아티팩트(한 쪽짜리 웹사이트·작은 도구 등)는 무료 요금제에서도 대화 안에서 만든다. 프로젝트는 지침과 지식 파일을 가진다. (2부 실습 도구)
 22. 워크플로·커맨드에서 스킬로의 변화 — https://developers.openai.com/codex/custom-prompts · https://code.claude.com/docs/en/skills · https://antigravity.google/docs/skills · https://www.anthropic.com/engineering/building-effective-agents
    - Codex 커스텀 프롬프트는 사용 중단 예정(deprecated), 스킬 사용 권장. Claude Code의 `.claude/commands/`는 예전 형식이지만 동작한다. Antigravity 문서는 스킬을 `/이름`으로 부르도록 안내한다. Anthropic은 정해진 코드 경로로 움직이는 시스템을 workflow, 스스로 과정을 정하는 시스템을 agent로 구분한다. (1부 스킬 정리)
+23. knollab-001 비교 실험 (강사 자료) — https://github.com/LUCKYBRIDGE/knollab-001
+   - 실험 사이트: https://luckybridge.github.io/knollab-001-a-ai-only/ · `…/knollab-001-b-design-md/` · `…/knollab-001-c-design-figma-mcp/` · `…/knollab-001-d-design-figma-mcp-actively/`
+   - 특수학교 학생용 카페 주문 연습 사이트(순수 HTML/CSS/JavaScript)를 같은 목표로 네 조건에서 제작. A·B·C는 같은 단계별 요청문(버전 1→2→3), 서로 다른 ChatGPT 프로젝트와 프로젝트 전용 메모리. B·C의 DESIGN.md는 동일(blob `c91e3a4`). C는 고정한 Figma 설계 + Figma MCP. D는 Figma 적극 활용, 버전 2 작업 중(2026-09-30 확인). (2부 사례)
