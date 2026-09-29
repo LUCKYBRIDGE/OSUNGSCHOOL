@@ -190,3 +190,12 @@ components:
 4. `python3 contact.py <pdf> <이름>`으로 6장씩 모은 검수 이미지를 만들어 눈으로 확인한다(어색한 줄바꿈, 정보 위계, 목업).
 5. `pdffonts`로 글꼴이 모두 포함(emb yes)됐는지, `pdftotext`로 대체 문자(�)가 없는지 확인한다.
 6. 같은 문제가 두 번 나오면 이 문서 또는 `CONTENT_STYLE_GUIDE.md`에 규칙을 더하고 `docs/GUIDELINE_CHANGELOG.md`에 이유를 적는다.
+
+## 인쇄용 안내문 (A4)
+
+- 원본 `slides/build/handout.html`, 스타일 `handout.css`, 검사 `handout-qa.js`. `./build.sh handout`으로 `practice/`에 PDF를 만든다.
+- A4 세로, 여백 위 10mm·좌우 12mm·아래 8mm. 앞뒤 2쪽을 넘기지 않는다.
+- 최소 글자: 본문·설명 9pt, 바닥글 8pt. 제목 17~20pt, 구역 제목 12pt.
+- 흑백으로 인쇄해도 읽히게 만든다. 색 대신 선·굵기·위치로 구분하고, 확인 상자와 쓰는 줄은 선으로 그린다.
+- 슬라이드 쪽 번호로 내용을 가리키지 않는다(쪽 번호는 바뀔 수 있다). 요청문은 슬라이드·`practice/README.md`와 같은 문장을 쓴다.
+- 확인: 자동 검사 결과 `OK`, `pdftoppm -gray`로 만든 흑백 이미지를 눈으로 본다.
