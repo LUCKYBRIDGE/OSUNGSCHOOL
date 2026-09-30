@@ -5,9 +5,9 @@ set -e
 cd "$(dirname "$0")"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 typeset -A OUT
-OUT[part1]="../pdf/osung_ai_digital_problem_solving_part1_workspace_v23_20260930.pdf"
-OUT[part2]="../pdf/osung_ai_digital_problem_solving_part2_ux_implementation_v23_20260930.pdf"
-OUT[handout]="../../practice/osung_ai_digital_problem_solving_handout_a4_v23_20260930.pdf"
+OUT[part1]="../pdf/osung_ai_digital_problem_solving_part1_workspace_v24_20260930.pdf"
+OUT[part2]="../pdf/osung_ai_digital_problem_solving_part2_ux_implementation_v24_20260930.pdf"
+OUT[handout]="../../practice/osung_ai_digital_problem_solving_handout_a4_v24_20260930.pdf"
 PART="${1:-}"
 PDF=""
 if [[ -n "$PART" ]]; then PDF="${OUT[$PART]:-}"; fi

@@ -5,7 +5,7 @@ const path = require('path');
 const {pathToFileURL} = require('url');
 const {chromium} = require('playwright');
 const base=__dirname;
-const names={part1:'../pdf/osung_ai_digital_problem_solving_part1_workspace_v23_20260930.pdf',part2:'../pdf/osung_ai_digital_problem_solving_part2_ux_implementation_v23_20260930.pdf',handout:'../../practice/osung_ai_digital_problem_solving_handout_a4_v23_20260930.pdf'};
+const names={part1:'../pdf/osung_ai_digital_problem_solving_part1_workspace_v24_20260930.pdf',part2:'../pdf/osung_ai_digital_problem_solving_part2_ux_implementation_v24_20260930.pdf',handout:'../../practice/osung_ai_digital_problem_solving_handout_a4_v24_20260930.pdf'};
 const candidates=[process.env.CHROME_PATH,'C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe','/Applications/Google Chrome.app/Contents/MacOS/Google Chrome','/usr/bin/google-chrome','/usr/bin/chromium'].filter(Boolean);
 (async()=>{
  const executablePath=candidates.find(x=>fs.existsSync(x));

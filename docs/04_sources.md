@@ -1,8 +1,8 @@
-# 참고 출처 (v23, 2026-09-30 확인)
+# 참고 출처 (v24, 2026-09-30 확인)
 
 도구·요금·기능·나이 기준은 빠르게 바뀌므로 발표 직전에 공식 문서를 다시 확인한다.
 
-- 괄호 속 쪽 번호는 v23 슬라이드 위치다(1부 42쪽, 2부 35쪽). 'Q'는 대본 끝 '예상 질문과 답변' 번호다.
+- 괄호 속 쪽 번호는 v24 슬라이드 위치다(1부 42쪽, 2부 35쪽). 'Q'는 대본 끝 '예상 질문과 답변' 번호다.
 - 번호 [n]은 발표 대본(`docs/03_speaker_script.md`)의 근거 번호와 같다.
 - v21 쪽 번호와의 대응은 `docs/v22_work_plan.md`에 있다.
 
@@ -47,7 +47,9 @@
    - Pro·Max·Team·Enterprise 대상 연구 프리뷰, 대화·인라인 댓글·직접 수정, 디자인 시스템 적용, Canva·PDF·PPTX·HTML 내보내기, Claude Code 핸드오프. (2부 18, Q1)
 15. Figma Developer Docs, *Figma MCP server* · *Write to canvas* · *Code to canvas* — https://developers.figma.com/docs/figma-mcp-server/ (2부 18)
 
-## 실습 도구 (설치 없이 브라우저에서)
+## 실습 도구 (웹 채팅과 작업 폴더)
+
+전문 도구의 규칙 파일은 [3][5]를 따른다. 2026-09-30 재확인: Codex는 AGENTS.md를 읽는다. Claude Code의 공유 규칙은 CLAUDE.md에서 `@AGENTS.md`로 참조할 수 있다. 활동지에는 버전·설정에 따른 자동 대체 읽기를 전제로 하지 않고 이 명시적 방법을 안내한다. 실행·브라우저 검사는 사용 가능한 도구와 권한에 따라 수행하며 미확인을 구분한다.
 
 18. OpenAI Help, *Projects in ChatGPT* — https://help.openai.com/en/articles/10169521
    - 프로젝트는 무료·유료 모든 요금제에서 쓸 수 있고, 프로젝트 설정에서 지침을 넣는다. (2부 26, Q1·Q2)

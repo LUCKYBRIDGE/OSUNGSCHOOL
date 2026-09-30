@@ -1,6 +1,6 @@
 # slides
 
-## 현재 발표용 파일 (v23)
+## 현재 발표용 파일 (v24)
 
 ```text
 slides/
@@ -15,8 +15,8 @@ slides/
 │  ├─ assets/knollab-001/       # 캡처 이미지 (2부 20쪽)
 │  └─ contact.py                # 검수 이미지 생성 (renders/는 git 제외)
 └─ pdf/
-   ├─ osung_ai_digital_problem_solving_part1_workspace_v23_20260930.pdf         # 현재
-   ├─ osung_ai_digital_problem_solving_part2_ux_implementation_v23_20260930.pdf # 현재
+   ├─ osung_ai_digital_problem_solving_part1_workspace_v24_20260930.pdf         # 현재
+   ├─ osung_ai_digital_problem_solving_part2_ux_implementation_v24_20260930.pdf # 현재
    └─ *_v22_20260930.pdf · *_v21_20260930.pdf                                    # 이전 버전
 ```
 
@@ -47,4 +47,4 @@ node slides/build/build.cjs all
 python slides/build/package_materials.py
 ```
 
-두 번째 명령은 발표 대본 PDF와 강의자료 ZIP을 만든다. Python에 reportlab이 필요하다. Windows는 맑은 고딕을 사용하고, 다른 환경은 `KOREAN_FONT`·`KOREAN_BOLD_FONT`에 한글 TTF 경로를 지정한다. 모든 PDF의 시각 검수와 `docs/pdf_validation_v23.md` 기록을 마친 뒤 배포한다.
+두 번째 명령은 발표 대본 PDF와 강의자료 ZIP을 만든다. Python에 reportlab이 필요하다. Windows는 맑은 고딕을 사용하고, 다른 환경은 `KOREAN_FONT`·`KOREAN_BOLD_FONT`에 한글 TTF 경로를 지정한다. 모든 PDF의 시각 검수와 `docs/pdf_validation_v24.md` 기록을 마친 뒤 배포한다.
