@@ -2,6 +2,8 @@
 
 확인일: 2026.9.30 · 강릉오성학교 연수
 
+이 기록은 과제 추가 전의 9개 섹션·63개 게시물 정리 결과다. 이후 과제 안내·결과물 제출을 추가한 현재 구성과 확인 결과는 [과제 추가 기록](assignment_update_20260930.md)을 따른다.
+
 [수정한 Padlet](https://padlet.com/lucky20220528/260930-jhtj91ryy8mwbvog) · [재사용할 안내문 원본](../practice/ai_setup_and_install_20260930.md)
 
 ## 섹션 구성과 게시글 배치
