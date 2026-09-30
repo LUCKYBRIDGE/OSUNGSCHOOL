@@ -35,5 +35,7 @@
 ### 실습 자료
 
 - 인쇄용 안내문(A4 앞뒤)과 복사용 요청문·양식: `practice/`
+- 추가 과제 운영: [과제 안내](../practice/assignments/README.md). 과제 1의 아이디어 정리 뒤 과제 2(키오스크)·3(안전교육 포스터/인포그래픽)·4(자유 결과물) 중 하나를 선택한다.
+- 공통 제출 문서는 overview.md 또는 prd.md 하나와 design.md다. Figma MCP는 연결 가능한 경우 선택 심화로 활용한다. 파일·사이트·저장소·Figma 링크를 결과물의 성격에 맞게 제출하고 실제 확인한 결과를 기록한다.
 
 쪽별 목적은 `docs/02_slide_outline.md`, 발표 대본과 예상 질문은 `docs/03_speaker_script.md`를 따른다.
