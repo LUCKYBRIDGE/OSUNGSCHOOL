@@ -113,7 +113,7 @@
       <tr><td>고등부 학생이</td><td>카페에서</td><td>메뉴를 고르고 주문하는 순서를 어려워해서</td><td>3단계 주문을 혼자 반복 연습하게 돕는다</td></tr>
       <tr><td>중학부 학생이</td><td>버스에서</td><td>내릴 곳을 알고 벨을 누르는 것을 어려워해서</td><td>안내 방송을 듣고 벨을 누르는 연습을 돕는다</td></tr>
     </table>
-    <div class="take">이 한 문장이 AI에게 보내는 첫 요청의 중심이 된다</div>
+    <div class="take">네 칸은 참고 질문이다. 메모로 시작하고, 미정은 만들면서 보완한다</div>
   </div>
   <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
 </section>
@@ -232,7 +232,7 @@
       <div class="pair"><div class="bub ai"><span class="who">AI</span>로그인이 필요한가요?</div><div class="bub me"><span class="who">교사</span>필요 없어요. 학생 이름도 넣지 않아요.</div></div>
       <div class="pair"><div class="bub ai"><span class="who">AI</span>어디에 공개할까요?</div><div class="bub me"><span class="who">교사</span>GitHub Pages로 주소만 만들어 주세요.</div></div>
     </div>
-    <div class="take">용어를 정확히 몰라도, 우리 교실의 조건을 알면 답할 수 있다</div>
+    <div class="take">용어를 정확히 몰라도, 실제 사용할 상황을 알면 답할 수 있다</div>
   </div>
   <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
 </section>
@@ -276,9 +276,9 @@
       <div class="fill">
         <div class="card amber"><span class="chip amber">왜 그럴까?</span>
           <ul class="bl">
-            <li>AI는 지금 대화에 보이는 내용만 참고한다</li>
+            <li>AI는 전달된 지침·자료·대화 범위에서 작업한다</li>
             <li>대화가 길어지면 앞 내용이 흐려진다</li>
-            <li>새 대화를 열면 처음부터 시작한다</li>
+            <li>새 대화에 이전 세부사항이 모두 넘어가지는 않는다</li>
           </ul>
         </div>
       </div>
@@ -711,14 +711,12 @@ description: 학습자료 화면을 점검할 때 쓴다
 <section class="slide">
   <header class="hd"><div class="kicker">05 작업공간과 인계</div><h2 class="t">처음 요청할 때 쓰는 문장</h2></header>
   <div class="bd">
-    <div class="code">나는 특수학교 교사다. 아래 문제를 해결할 작은 웹 자료를 만들고 싶다.
-- 문제: <span class="c">(누가 / 어떤 상황에서 / 무엇을 어려워해서 / 무엇을 돕는지)</span>
-- 사용 조건: <span class="c">(사용하는 사람 / 기기 / 설치 가능 여부 / 저장 필요 여부)</span>
-- 이번 버전 범위: <span class="c">(3~5단계)</span>
-바로 만들지 말고 먼저
-1) 내가 빠뜨린 조건을 질문하고
-2) PROJECT_OVERVIEW.md와 AGENTS.md 초안을 만들어 줘.</div>
-    <div class="take">바로 만들게 하지 않고, 먼저 질문하고 문서부터 쓰게 한다</div>
+    <div class="code">나는 교사이고, 아래 아이디어를 실제로 만들어 보고 싶어.
+<span class="c">(내 메모)</span>
+진행에 꼭 필요한 정보가 빠졌다면 중요한 것부터 짧게 질문해 줘.
+정하지 않은 내용은 제안하거나 미정으로 남겨 줘.
+PROJECT_OVERVIEW.md와 AGENTS.md 초안부터 짧게 정리해 줘.</div>
+    <div class="take">메모로 시작하고, 꼭 필요한 질문과 짧은 문서 초안부터 정리한다</div>
   </div>
   <footer class="ft"><span>1부. 문제 정의와 AI 작업환경</span><span class="pg">1부 · </span></footer>
 </section>
@@ -741,7 +739,7 @@ description: 학습자료 화면을 점검할 때 쓴다
   <header class="hd"><div class="kicker">1부 정리</div><h2 class="t">1부에서 가져갈 세 가지</h2></header>
   <div class="bd">
     <div class="sum">
-      <div class="p"><b>1</b><div><h4>만들 것은 앱이 아니라 해결할 문제다</h4><p>문제 한 문장과 사용 조건부터 정한다</p></div></div>
+      <div class="p"><b>1</b><div><h4>만들 것은 앱이 아니라 해결할 문제다</h4><p>문제와 사용 상황을 메모하고, 필요한 정보를 보완한다</p></div></div>
       <div class="p"><b>2</b><div><h4>설명은 대화가 아니라 파일에 남긴다</h4><p>규칙·문서·스킬·인계 파일이 AI의 기억이 된다</p></div></div>
       <div class="p"><b>3</b><div><h4>완료는 확인한 결과로 판단한다</h4><p>완료 기준을 먼저 주고, 확인한 방법을 받는다</p></div></div>
     </div>

@@ -21,7 +21,18 @@
 | 1부 | 4. AI·디지털 문제해결 실무 과정 | 1부. 문제 정의와 AI 작업환경 | 문제 찾기, 사용 조건, 최소 개발 지식, 하네스, ECC, 작업공간, Handoff |
 | 2부 | 4. AI·디지털 문제해결 실무 과정 | 2부. UX/UI 설계와 구현·검증 실습 | UX/UI, DESIGN.md, 디자인 도구, knollab-001 사례, 구현·검증·배포, 오성학교 실습 |
 
-현재 발표 파일은 v22다(1부 42쪽, 2부 35쪽). 별도 마스터 파일 없이 1부·2부 원본(`slides/build/part1.html`, `part2.html`)이 기준이다. 참석자에게 나눠 줄 인쇄용 안내문과 복사용 요청문은 `practice/`에 있다.
+현재 발표 파일은 v23이다(1부 42쪽, 2부 35쪽). 별도 마스터 파일 없이 1부·2부 원본(`slides/build/part1.html`, `part2.html`)이 기준이다. 참석자에게 나눠 줄 인쇄용 안내문과 복사용 요청문은 `practice/`에 있다.
+
+## 최신 강의자료 다운로드 (v23)
+
+- [전체 강의자료 ZIP](practice/downloads/osung_course_materials_v23_20260930.zip)
+- [1부 발표 PDF · 42쪽](slides/pdf/osung_ai_digital_problem_solving_part1_workspace_v23_20260930.pdf)
+- [2부 발표 PDF · 35쪽](slides/pdf/osung_ai_digital_problem_solving_part2_ux_implementation_v23_20260930.pdf)
+- [활동 안내·활동지 PDF · A4 양면](practice/osung_ai_digital_problem_solving_handout_a4_v23_20260930.pdf)
+- [발표 대본 PDF](docs/osung_speaker_script_v23_20260930.pdf) · [편집 가능한 대본](docs/03_speaker_script.md)
+- [복사용 요청문](practice/README.md) · [자유 메모 활동 안내](practice/activity_guide.md)
+
+기본 흐름은 유지하며 참고 질문·자유 메모로 시작한다. 미정은 제작 중 보완한다. v21·v22는 이전 버전이고, 실제 발표·배포에는 위 v23 파일을 쓴다. ZIP은 위 PDF 네 개와 편집용 대본, 활동 안내, 요청문, 출처, 검수 기록을 포함한다.
 
 ---
 
@@ -75,23 +86,23 @@ OSUNGSCHOOL/
 ├─ SPEAKER_SCRIPT_GUIDE.md
 ├─ docs/
 │  ├─ 00_course_overview.md
-│  ├─ 02_slide_outline.md         # 쪽별 목적과 말할 핵심 (v22)
-│  ├─ 03_speaker_script.md        # 발표 대본 + 예상 질문 (v22, 1부 42쪽·2부 35쪽)
-│  ├─ 04_sources.md               # 출처 (v22)
-│  ├─ v22_work_plan.md            # v22에서 바꾼 것과 v21 쪽 번호 대응
-│  ├─ pdf_validation_v22.md       # v22 검수 기록
+│  ├─ 02_slide_outline.md         # 쪽별 목적과 말할 핵심 (v23)
+│  ├─ 03_speaker_script.md        # 발표 대본 + 예상 질문 (v23, 1부 42쪽·2부 35쪽)
+│  ├─ 04_sources.md               # 출처 (v23)
+│  ├─ v23_work_plan.md            # v23 개정 범위와 변경 이유
+│  ├─ pdf_validation_v23.md       # v23 검수 기록
 │  ├─ v21_revision_analysis.md    # v21 재제작 때의 문제 분석
 │  ├─ lecture_flow_split_20260930.md
 │  ├─ GUIDELINE_CHANGELOG.md
 │  └─ 이전 버전 기록
 ├─ practice/
 │  ├─ README.md                   # 복사용 요청문과 양식
-│  └─ osung_ai_digital_problem_solving_handout_a4_v22_20260930.pdf   # 인쇄용 안내문 (A4 앞뒤)
+│  └─ osung_ai_digital_problem_solving_handout_a4_v23_20260930.pdf   # 인쇄용 안내문 (A4 앞뒤)
 └─ slides/
    ├─ build/                      # HTML 원본, 스타일, 자동 검사, PDF·캡처 스크립트
    └─ pdf/
-      ├─ osung_ai_digital_problem_solving_part1_workspace_v22_20260930.pdf
-      ├─ osung_ai_digital_problem_solving_part2_ux_implementation_v22_20260930.pdf
+      ├─ osung_ai_digital_problem_solving_part1_workspace_v23_20260930.pdf
+      ├─ osung_ai_digital_problem_solving_part2_ux_implementation_v23_20260930.pdf
       └─ (이전 버전 v21 PDF)
 ```
 
@@ -128,14 +139,14 @@ OSUNGSCHOOL/
 
 ---
 
-## 최신 정리 문서 (v22)
+## 최신 정리 문서 (v23)
 
-- `slides/pdf/*_v22_20260930.pdf`: 발표 자료 (1부 42쪽, 2부 35쪽)
+- `slides/pdf/*_v23_20260930.pdf`: 발표 자료 (1부 42쪽, 2부 35쪽)
 - `practice/`: 인쇄용 안내문(A4 앞뒤)과 복사용 요청문·양식
 - `docs/03_speaker_script.md`: 발표 대본과 예상 질문 16개
 - `docs/02_slide_outline.md`: 쪽별 목적과 말할 핵심
 - `docs/lecture_flow_split_20260930.md`: 1부·2부 강의 흐름
-- `docs/pdf_validation_v22.md`: PDF 검수 기록
+- `docs/pdf_validation_v23.md`: PDF 검수 기록
 - `docs/04_sources.md`: 출처와 v20 대비 바로잡은 사실
-- `docs/v22_work_plan.md`: v22에서 바꾼 것과 v21 쪽 번호 대응
+- `docs/v23_work_plan.md`: v23 개정 범위와 변경 이유
 - `docs/GUIDELINE_CHANGELOG.md`: 핵심 지침 변경 이유와 이력

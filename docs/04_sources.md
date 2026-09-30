@@ -1,8 +1,8 @@
-# 참고 출처 (v22, 2026-09-30 확인)
+# 참고 출처 (v23, 2026-09-30 확인)
 
 도구·요금·기능·나이 기준은 빠르게 바뀌므로 발표 직전에 공식 문서를 다시 확인한다.
 
-- 괄호 속 쪽 번호는 v22 슬라이드 위치다(1부 42쪽, 2부 35쪽). 'Q'는 대본 끝 '예상 질문과 답변' 번호다.
+- 괄호 속 쪽 번호는 v23 슬라이드 위치다(1부 42쪽, 2부 35쪽). 'Q'는 대본 끝 '예상 질문과 답변' 번호다.
 - 번호 [n]은 발표 대본(`docs/03_speaker_script.md`)의 근거 번호와 같다.
 - v21 쪽 번호와의 대응은 `docs/v22_work_plan.md`에 있다.
 
@@ -54,7 +54,7 @@
 19. OpenAI Help, *Working with writing blocks and code blocks in ChatGPT* — https://help.openai.com/en/articles/20001246
    - 코드 블록에서 Preview를 누르면 HTML 페이지 등을 ChatGPT 안에서 미리 본다. 쓸 수 있는 기능은 요금제·기기·설정에 따라 다르다. (2부 26, Q2)
 20. Gemini Apps Help, *Create docs, apps & more with Canvas* · *Use Gems in Gemini Apps* — https://support.google.com/gemini/answer/16047321 · https://support.google.com/gemini/answer/15146780
-   - Canvas에서 만든 앱을 Preview로 본다. Gem은 지침과 Knowledge 파일을 가진다. 개인 계정 Gem은 2026년 11월부터 스킬로 자동 전환된다. Gem 사용은 13세 이상. (2부 26·27, 1부 29, Q6·Q12)
+   - Canvas에서 만든 앱을 Preview로 본다. Gem은 지침과 Knowledge 파일을 가진다. 개인 계정 Gem은 2026년 11월부터 스킬로 자동 전환된다. 개인 계정 Gem은 13세 또는 국가별 해당 나이 이상이며, 한국은 14세 이상이다. 학교·업무 계정은 별도 조건을 확인한다. 나이 근거: https://support.google.com/gemini/answer/15236321 · https://support.google.com/accounts/answer/1350409 (2026. 9. 30. 재확인). (2부 26·27, 1부 29, Q6·Q12)
 21. Claude Help, *What are artifacts and how do I use them?* · *What are projects?* — https://support.claude.com/en/articles/17153992 · https://support.claude.com/en/articles/9517075
    - 아티팩트(한 쪽짜리 웹사이트·작은 도구 등)는 무료 요금제에서도 대화 안에서 만든다. 프로젝트는 지침과 지식 파일을 가진다. (2부 26, Q1·Q2)
 
@@ -70,7 +70,7 @@
 ## 배포와 접근성
 
 16. GitHub Docs, *About GitHub Pages* — https://docs.github.com/pages
-   - GitHub Free는 공개 저장소에서 Pages 사용, Pages 사이트는 인터넷에 공개됨. (1부 13, 2부 24, Q1·Q7)
+   - GitHub Free는 공개 저장소에서 Pages 사용, Pages 사이트는 인터넷에 공개됨. 웹 화면의 진입 파일 index.html은 게시 소스 최상위에 둔다. 제작 예시는 main · /(root). 근거: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site (2026. 9. 30. 재확인). (1부 13, 2부 24, Q1·Q7)
 17. W3C, *WCAG 2.2* — https://www.w3.org/TR/WCAG22/ (누르는 대상 크기, 색에만 의존하지 않기) (2부 10)
 
 ## v20 대비 바로잡은 내용

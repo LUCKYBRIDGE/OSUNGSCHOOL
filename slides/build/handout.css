@@ -100,3 +100,7 @@ ol.st { padding-left: 5mm; display: flex; flex-direction: column; gap: 0.6mm; fo
 
 /* 바닥 */
 .foot { margin-top: auto; display: flex; justify-content: space-between; border-top: 0.3mm solid #999; padding-top: 1.2mm; font-size: 8pt; color: #444; }
+
+/* 자유 작성 공간: 고정 답칸 대신 넓은 메모 영역 */
+.free-space { height: 68mm; border: .3mm solid #777; border-radius: 1.5mm; background: repeating-linear-gradient(to bottom, #fff 0, #fff 10mm, #e4e4e4 10mm, #e4e4e4 10.2mm); }
+.result-space { height: 24mm; border: .3mm solid #777; border-radius: 1.5mm; }
