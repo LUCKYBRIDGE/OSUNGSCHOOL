@@ -6,6 +6,7 @@
 - 원본: `slides/build/part1.html`, `slides/build/part2.html` / PDF: `slides/pdf/*_v22_20260930.pdf` / 인쇄용 안내문: `practice/*_handout_a4_v22_20260930.pdf`
 - 각 쪽의 '말할 핵심'은 화면에 없는 설명의 요약이다. 전체 발표 대본과 예상 질문은 `docs/03_speaker_script.md`(쪽 번호 동일)에 있다.
 - v21에서 합치거나 뺀 쪽의 대응은 `docs/v22_work_plan.md`에 있다.
+- Padlet에서 별도 과제를 운영할 때는 [아이디어 → 선택 제작 → 제출 안내](../practice/assignments/README.md)를 사용한다. v22 PDF의 쪽 순서와 기본 웹 실습은 유지하며, 포스터·자유 결과물은 선택 제작으로 확장한다.
 
 ## 1부. 문제 정의와 AI 작업환경
 

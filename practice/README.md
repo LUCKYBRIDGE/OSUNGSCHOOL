@@ -5,6 +5,7 @@
 - 인쇄용 안내문(A4 앞뒤 2쪽): [osung_ai_digital_problem_solving_handout_a4_v22_20260930.pdf](osung_ai_digital_problem_solving_handout_a4_v22_20260930.pdf)
 - 발표 자료(PDF): [slides/pdf](../slides/pdf) · 발표 대본: [docs/03_speaker_script.md](../docs/03_speaker_script.md)
 - 선택 실습: [AI 환경 준비·MCP·Skill 설치 안내](ai_setup_and_install_20260930.md) — 기본 실습은 설치 없이 시작하고, 필요한 연결만 추가한다.
+- 과제·제출: [과제 1로 아이디어 정리 → 과제 2·3·4 중 하나 선택](assignments/README.md) — 복사용 요청문, 개요·설계 예시와 내려받을 ZIP을 제공한다.
 - 괄호 `( )` 속은 내 내용으로 바꿔 쓴다. 회색 상자 오른쪽 위의 복사 버튼으로 복사할 수 있다.
 
 ## 준비: 설치 없이 브라우저에서

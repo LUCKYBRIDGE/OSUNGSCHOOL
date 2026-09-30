@@ -130,7 +130,8 @@ OSUNGSCHOOL/
 
 ## 최신 정리 문서 (v22)
 
-- [연수 자료 Padlet](https://padlet.com/lucky20220528/260930-jhtj91ryy8mwbvog): 이용 순서에 맞춘 9개 섹션
+- [연수 자료 Padlet](https://padlet.com/lucky20220528/260930-jhtj91ryy8mwbvog): 학습·과제·제출·참고의 11개 섹션
+- [과제 안내·예시·ZIP](practice/assignments/README.md): 아이디어 정리 후 키오스크·안전교육·자유 결과물 중 하나 선택
 - [AI 환경 준비·MCP·Skill 안내](practice/ai_setup_and_install_20260930.md): 역할 분담, 모델·사용량 확인, 앱별 설치 요청문
 - [Padlet 정리·검수 기록](docs/padlet_update_20260930.md): 섹션 구성과 확인한 최신 근거
 
